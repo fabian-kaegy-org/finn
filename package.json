@@ -1,0 +1,49 @@
+{
+	"name": "finn",
+	"version": "1.0.0",
+	"description": "WordPress Theme build for my personal blog / website",
+	"main": "src/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"start": "wp-scripts start",
+		"test:e2e": "wp-scripts test-e2e",
+		"test:unit": "wp-scripts test-unit-js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://fabiankaegy@github.com/fabiankaegy/finn.git"
+	},
+	"keywords": [
+		"wordpress",
+		"theme"
+	],
+	"author": "fabiankaegy",
+	"license": "GPL-3.0-or-later",
+	"bugs": {
+		"url": "https://github.com/fabiankaegy/finn/issues"
+	},
+	"homepage": "https://github.com/fabiankaegy/finn#readme",
+	"dependencies": {
+		"@wordpress/scripts": "^3.4.0"
+	},
+	"devDependencies": {
+		"@wordpress/eslint-plugin": "^2.4.0",
+		"autoprefixer": "^9.6.1",
+		"browser-sync": "^2.26.7",
+		"browser-sync-webpack-plugin": "^2.2.2",
+		"css-loader": "^3.2.0",
+		"mini-css-extract-plugin": "^0.8.0",
+		"node-sass": "^4.12.0",
+		"normalize.css": "^8.0.1",
+		"path": "^0.12.7",
+		"postcss-loader": "^3.0.0",
+		"postcss-preset-env": "^6.7.0",
+		"sass-loader": "^7.3.1",
+		"webpack": "^4.39.2"
+	}
+}
