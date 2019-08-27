@@ -1,3 +1,9 @@
-p {
-	color: red;
-}
+@import "../node_modules/normalize.css/normalize.css";
+
+@import "./styles/variables";
+
+@import "./styles/general/general";
+@import "./styles/atoms/atoms";
+@import "./styles/molecules/molecules";
+@import "./styles/organisms/organisms";
+@import "./styles/templates/templates";

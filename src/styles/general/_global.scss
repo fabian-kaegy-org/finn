@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	font-family: $font-family;
+	font-size: 18px;
+	line-height: 1.5;
+	color: $dark-color;
+	@media (prefers-color-scheme: "dark") {
+		background: darken($dark-color, 10);
+		color: $light-color;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-sans;
+}

@@ -1,0 +1,31 @@
+.site-content {
+	> * {
+		@include standard-width();
+	}
+	> .alignwide {
+		@include extended-width();
+	}
+	> .alignfull {
+		@include full-width();
+	}
+	> .alignleft {
+		float: left;
+	}
+	> .alignleft {
+		float: right;
+	}
+
+	> :first-child {
+		margin-top: 3rem;
+		&.alignfull {
+			margin-top: 0 !important;
+		}
+	}
+
+	> :last-child {
+		margin-bottom: 3rem;
+		&.alignfull {
+			margin-bottom: 0 !important;
+		}
+	}
+}

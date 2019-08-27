@@ -1,0 +1,30 @@
+a {
+	text-decoration: none;
+	color: $primary-color;
+	&:hover {
+		color: darken($primary-color, 10);
+	}
+}
+
+.site-content {
+	a {
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		text-decoration-skip: auto;
+		&[href*="//"]:not([href*="localhost"]) {
+			position: relative;
+			&:hover,
+			&:focus {
+				&::after {
+					position: absolute;
+					font-family: "dashicons";
+					font-size: 0.75em;
+					display: inline-block;
+					transform: translateY(-2px);
+					opacity: 0.5;
+					content: "\f504";
+				}
+			}
+		}
+	}
+}

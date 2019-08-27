@@ -1,0 +1,28 @@
+.site-footer {
+	padding: 1em;
+	text-align: center;
+	background-color: $light-color;
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@media (min-width: 600px) {
+			flex-direction: row;
+		}
+		a {
+			color: $dark-color;
+			@media (prefers-color-scheme: "dark") {
+				color: $light-color;
+			}
+		}
+	}
+	p {
+		color: darken($light-color, 30);
+		a {
+			color: darken($light-color, 30);
+		}
+	}
+	@media (prefers-color-scheme: "dark") {
+		background-color: $dark-color;
+	}
+}

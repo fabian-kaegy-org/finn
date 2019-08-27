@@ -1,0 +1,19 @@
+.wp-block-latest-posts {
+	list-style: none;
+	padding: 0;
+	&.is-grid {
+		li {
+			padding: 1em;
+			background-color: $light-color;
+			&:hover {
+				background-color: darken($light-color, 1);
+			}
+			@media (prefers-color-scheme: "dark") {
+				background-color: $dark-color;
+				&:hover {
+					background-color: darken($dark-color, 1);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.wp-block-image {
+	&.alignfull {
+		width: 100%;
+		max-width: 100%;
+		margin: 3em auto;
+	}
+	img {
+		height: auto;
+		display: block;
+		transition: 0.2s ease-in-out;
+		@media (prefers-color-scheme: "dark") {
+			filter: brightness(80%);
+			&:hover,
+			&:focus {
+				filter: brightness(100%);
+			}
+		}
+	}
+}

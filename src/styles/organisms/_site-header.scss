@@ -1,0 +1,9 @@
+.site-header {
+	padding: 1em;
+	background-color: lighten($primary-color, 35);
+	@media (prefers-color-scheme: "dark") {
+		background-color: #383734;
+	}
+	@include inflate-margins();
+	text-align: center;
+}

@@ -1,0 +1,18 @@
+.wp-block-table {
+	table {
+		border-collapse: collapse;
+	}
+	&.is-style-stripes {
+		tbody {
+			td {
+				border: none;
+			}
+			tr:nth-child(odd) {
+				background-color: $light-color;
+				@media (prefers-color-scheme: "dark") {
+					background-color: $dark-color;
+				}
+			}
+		}
+	}
+}

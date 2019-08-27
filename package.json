@@ -29,7 +29,8 @@
 	},
 	"homepage": "https://github.com/fabiankaegy/finn#readme",
 	"dependencies": {
-		"@wordpress/scripts": "^3.4.0"
+		"@wordpress/scripts": "^3.4.0",
+		"highlight.js": "^9.15.10"
 	},
 	"devDependencies": {
 		"@wordpress/eslint-plugin": "^2.4.0",
