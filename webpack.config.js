@@ -55,7 +55,7 @@ module.exports = [
 			...defaultConfig.plugins,
 			new MiniCssExtractPlugin(),
 			new BrowserSyncPlugin( {
-				proxy: 'http://fabian-kaegy.dev',
+				proxy: 'http://fabian-kaegy.localdev',
 			} ),
 			require( 'autoprefixer' ),
 		],

@@ -1,0 +1,7 @@
+.post-date {
+	font-style: italic;
+	color: scale-color($light-color, $lightness: -40%);
+	@media (prefers-color-scheme: "dark") {
+		color: scale-color($dark-color, $lightness: +40%);
+	}
+}

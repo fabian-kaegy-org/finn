@@ -1,8 +1,8 @@
 .wp-block-image {
+	@include standard-width();
 	&.alignfull {
-		width: 100%;
-		max-width: 100%;
-		margin: 3em auto;
+		@include full-width();
+		margin: $large-spacing auto;
 	}
 	img {
 		height: auto;

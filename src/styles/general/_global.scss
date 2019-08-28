@@ -8,16 +8,7 @@
 	line-height: 1.5;
 	color: $dark-color;
 	@media (prefers-color-scheme: "dark") {
-		background: darken($dark-color, 10);
+		background: scale-color($dark-primary-color, $lightness: -40%);
 		color: $light-color;
 	}
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: $font-family-sans;
 }

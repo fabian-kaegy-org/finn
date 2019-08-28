@@ -5,25 +5,22 @@
   font-family: "source-serif-pro", serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #424242; }
+  color: #404040; }
   @media (prefers-color-scheme: dark) {
     :root {
-      background: #292929;
-      color: #eeeeee; } }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "source-sans-pro", sans-serif; }
+      background: #292c2c;
+      color: #f2f2f2; } }
 
 a {
   text-decoration: none;
-  color: #fbbf3e; }
+  color: #4f7179; }
   a:hover {
-    color: #faae0c; }
+    color: #779da6; }
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: #a0bac1; }
+      a:hover {
+        color: #779da6; } }
 
 .site-content a {
   text-decoration: underline;

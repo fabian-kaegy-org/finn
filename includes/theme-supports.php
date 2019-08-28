@@ -16,6 +16,8 @@ function theme_supports() {
     add_theme_support( 'wp-block-styles' );
     add_theme_support( 'editor-styles' );
 
+    add_theme_support('post-thumbnails');
+
     add_theme_support( 'custom-logo', array(
         'height'      => 100,
         'width'       => 400,

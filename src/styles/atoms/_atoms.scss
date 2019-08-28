@@ -1,5 +1,7 @@
 .site-content {
-	@import "./headings";
 	@import "./code";
 }
+@import "./headings";
 @import "./links";
+@import "./post-date";
+@import "./inputs";

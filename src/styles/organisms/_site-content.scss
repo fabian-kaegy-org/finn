@@ -16,14 +16,14 @@
 	}
 
 	> :first-child {
-		margin-top: 3rem;
+		margin-top: $large-spacing;
 		&.alignfull {
 			margin-top: 0 !important;
 		}
 	}
 
 	> :last-child {
-		margin-bottom: 3rem;
+		margin-bottom: $large-spacing;
 		&.alignfull {
 			margin-bottom: 0 !important;
 		}

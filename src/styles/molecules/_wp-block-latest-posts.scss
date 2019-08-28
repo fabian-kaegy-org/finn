@@ -3,15 +3,15 @@
 	padding: 0;
 	&.is-grid {
 		li {
-			padding: 1em;
+			padding: $standard-spacing;
 			background-color: $light-color;
 			&:hover {
-				background-color: darken($light-color, 1);
+				background-color: scale-color($light-color, $lightness: +10%);
 			}
 			@media (prefers-color-scheme: "dark") {
 				background-color: $dark-color;
 				&:hover {
-					background-color: darken($dark-color, 1);
+					background-color: scale-color($dark-color, $lightness: +10%);
 				}
 			}
 		}

@@ -1,5 +1,5 @@
 @mixin standard-width {
-	margin: 1rem auto;
+	margin: $standard-spacing auto;
 	max-width: 90%;
 	@media (min-width: 600px) {
 		width: 70%;
@@ -11,7 +11,7 @@
 }
 
 @mixin extended-width {
-	margin: 2rem auto;
+	margin: $medium-spacing auto;
 	max-width: 95%;
 	@media (min-width: 600px) {
 		width: 80%;
@@ -23,7 +23,7 @@
 }
 
 @mixin full-width {
-	margin: 3rem 0;
+	margin: $large-spacing 0;
 	width: 100%;
 	max-width: 100%;
 }

@@ -10,7 +10,7 @@ li {
 		display: inline-block;
 		word-break: keep-all;
 		background-color: $light-color;
-		padding: 0px 8px;
+		padding: 0em 0.25em;
 		border-radius: 6px;
 		@media (prefers-color-scheme: "dark") {
 			background-color: $dark-color;

@@ -1,10 +1,10 @@
 .wp-block-quote {
-	margin: 1em auto;
+	margin: $standard-spacing auto;
 	&.alignwide,
 	&.alignfull {
-		margin: 2em auto;
+		margin: $medium-spacing auto;
 	}
-	padding: 1em 2em;
+	padding: $standard-spacing $medium-spacing;
 	background: $light-color;
 	border-color: $dark-color;
 	p:first-child {

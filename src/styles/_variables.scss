@@ -2,6 +2,17 @@ $font-family: "source-serif-pro", serif;
 $font-family-sans: "source-sans-pro", sans-serif;
 $font-family-code: "source-code-pro", monospace;
 
-$primary-color: #fbbf3e;
-$light-color: #eeeeee;
-$dark-color: #424242;
+$primary-color: #779da6;
+$light-color: scale-color(#ffffff, $lightness: -5%);
+$dark-color: scale-color(#000000, $lightness: +25%);
+
+$light-primary-color: scale-color($primary-color, $lightness: +85%);
+$dark-primary-color: scale-color(
+	$primary-color,
+	$lightness: -50%,
+	$saturation: -85%
+);
+
+$standard-spacing: 1rem;
+$medium-spacing: 2rem;
+$large-spacing: 3rem;

@@ -1,5 +1,5 @@
 .site-footer {
-	padding: 1em;
+	padding: $standard-spacing;
 	text-align: center;
 	background-color: $light-color;
 	ul {
@@ -17,12 +17,12 @@
 		}
 	}
 	p {
-		color: darken($light-color, 30);
+		color: scale-color($light-color, $lightness: +30%);
 		a {
-			color: darken($light-color, 30);
+			color: scale-color($light-color, $lightness: -30%);
 		}
 	}
 	@media (prefers-color-scheme: "dark") {
-		background-color: $dark-color;
+		background-color: scale-color($dark-primary-color, $lightness: -30%);
 	}
 }
