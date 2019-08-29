@@ -8,8 +8,6 @@ import { useEffect, useRef } from '@wordpress/element';
 import { Modal, detectOutsideClick } from './Modal';
 
 export const Lightbox = ( props ) => {
-	const lightboxRef = useRef();
-
 	const {
 		image,
 		image: { src, alt, classNames },
@@ -17,6 +15,8 @@ export const Lightbox = ( props ) => {
 		previousImage,
 		clearImage,
 	} = props;
+
+	const lightboxRef = useRef();
 
 	const handleKeyDown = ( event ) => {
 		event.preventDefault();

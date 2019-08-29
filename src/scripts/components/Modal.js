@@ -26,6 +26,7 @@ export const detectOutsideClick = ( ref, callback ) => {
 		}
 	};
 
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	useEffect( () => {
 		// Bind the event listener
 		document.addEventListener( 'mousedown', handleClickOutside );

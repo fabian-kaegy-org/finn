@@ -7,7 +7,6 @@ import { render } from '@wordpress/element';
  * Internal dependencies
  */
 import { Gallery } from '../components/Gallery';
-import { LightboxRoot } from '../components/Lightbox';
 
 domReady( () => {
 	const galleries = document.querySelectorAll( '.wp-block-gallery' );
