@@ -14,13 +14,13 @@ input,
 textarea {
 	padding: 10px;
 	border-radius: 6px;
-	color: $dark-color;
-	border: 1px solid $light-color;
-	background-color: $light-color;
+	color: $dark-primary-color;
+	border: 1px solid $light-primary-color;
+	background-color: $light-primary-color;
 	@media (prefers-color-scheme: "dark") {
-		color: $light-color;
-		border: 1px solid $dark-color;
-		background-color: $dark-color;
+		color: $light-primary-color;
+		border: 1px solid $dark-primary-color;
+		background-color: $dark-primary-color;
 	}
 	&:focus {
 		outline: none;

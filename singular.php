@@ -35,6 +35,7 @@ get_header(); ?>
 		?>
 
 	</main>
-	<?php comments_template(); ?>
-
+	<?php if (comments_open()) {
+        comments_template(); 
+    }?>
 <?php get_footer(); ?>

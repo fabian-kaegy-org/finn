@@ -40,3 +40,30 @@
 		margin-bottom: 0;
 	}
 }
+
+@mixin background-color($contrast: 0, $hover: "false") {
+	$intensity: 0%;
+	@if $contrast = 1 {
+		$intensity: 10%;
+	}
+	@if $contrast = 2 {
+		$intensity: 20%;
+	}
+	@if $contrast = 3 {
+		$intensity: 30%;
+	}
+
+	background-color: scale-color($primary-color, $lightness: + $intensity);
+	@media (prefers-color-scheme: "dark") {
+		background-color: scale-color($primary-color, $lightness: -$intensity);
+	}
+
+	@if $hover = "true" {
+		&:hover {
+			background-color: scale-color($primary-color, $lightness: + $intensity);
+			@media (prefers-color-scheme: "dark") {
+				background-color: scale-color($primary-color, $lightness: -$intensity);
+			}
+		}
+	}
+}

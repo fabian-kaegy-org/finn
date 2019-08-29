@@ -3,14 +3,15 @@
 		border-collapse: collapse;
 	}
 	&.is-style-stripes {
+		border-bottom: none;
 		tbody {
 			td {
 				border: none;
 			}
 			tr:nth-child(odd) {
-				background-color: $light-color;
+				background-color: $light-primary-color;
 				@media (prefers-color-scheme: "dark") {
-					background-color: $dark-color;
+					background-color: $dark-primary-color;
 				}
 			}
 		}

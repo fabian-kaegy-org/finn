@@ -4,14 +4,14 @@
 	&.is-grid {
 		li {
 			padding: $standard-spacing;
-			background-color: $light-color;
+			background-color: $light-primary-color;
 			&:hover {
-				background-color: scale-color($light-color, $lightness: +10%);
+				background-color: scale-color($light-primary-color, $lightness: +10%);
 			}
 			@media (prefers-color-scheme: "dark") {
-				background-color: $dark-color;
+				background-color: $dark-primary-color;
 				&:hover {
-					background-color: scale-color($dark-color, $lightness: +10%);
+					background-color: scale-color($dark-primary-color, $lightness: +10%);
 				}
 			}
 		}

@@ -13,8 +13,8 @@ li {
 		padding: 0em 0.25em;
 		border-radius: 6px;
 		@media (prefers-color-scheme: "dark") {
-			background-color: $dark-color;
-			color: $light-color;
+			background-color: $dark-primary-color;
+			color: $light-primary-color;
 		}
 	}
 }

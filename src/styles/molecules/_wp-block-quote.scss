@@ -1,17 +1,23 @@
 .wp-block-quote {
-	margin: $standard-spacing auto;
+	margin: $standard-spacing auto !important;
 	&.alignwide,
 	&.alignfull {
-		margin: $medium-spacing auto;
+		margin: $medium-spacing auto !important;
 	}
-	padding: $standard-spacing $medium-spacing;
-	background: $light-color;
-	border-color: $dark-color;
-	p:first-child {
+	padding: $standard-spacing $medium-spacing !important;
+	background: $light-primary-color;
+	border-color: $dark-primary-color;
+	p {
 		font-style: italic;
 	}
+	cite {
+		font-size: 1rem;
+		&::before {
+			content: "-- ";
+		}
+	}
 	@media (prefers-color-scheme: "dark") {
-		background: $dark-color;
-		border-color: $light-color;
+		background: $dark-primary-color;
+		border-color: $light-primary-color;
 	}
 }

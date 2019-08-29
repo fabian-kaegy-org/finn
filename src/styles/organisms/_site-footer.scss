@@ -1,7 +1,8 @@
 .site-footer {
 	padding: $standard-spacing;
 	text-align: center;
-	background-color: $light-color;
+	background-color: $light-primary-color;
+	z-index: 50;
 	ul {
 		display: flex;
 		flex-direction: column;
@@ -10,16 +11,22 @@
 			flex-direction: row;
 		}
 		a {
-			color: $dark-color;
+			color: $dark-primary-color;
 			@media (prefers-color-scheme: "dark") {
-				color: $light-color;
+				color: $light-primary-color;
+			}
+			&:hover {
+				color: scale-color($dark-primary-color, $lightness: +30%);
+				@media (prefers-color-scheme: "dark") {
+					color: scale-color($light-primary-color, $lightness: -20%);
+				}
 			}
 		}
 	}
 	p {
-		color: scale-color($light-color, $lightness: +30%);
+		color: scale-color($light-primary-color, $lightness: +30%);
 		a {
-			color: scale-color($light-color, $lightness: -30%);
+			color: scale-color($light-primary-color, $lightness: -30%);
 		}
 	}
 	@media (prefers-color-scheme: "dark") {

@@ -5,7 +5,7 @@
 @import "./site-branding";
 @import "./navigatioins";
 
-#content.site-content {
+.site-content {
 	@import "./wp-block-image";
 	@import "./wp-block-quote";
 	@import "./wp-block-code";
@@ -22,3 +22,4 @@
 }
 
 @import "./comment-list";
+@import "./social-menu";

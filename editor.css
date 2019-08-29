@@ -27,16 +27,6 @@ a {
   text-underline-offset: 2px;
   -webkit-text-decoration-skip: auto;
           text-decoration-skip: auto; }
-  .site-content a[href*="//"]:not([href*="localhost"]) {
-    position: relative; }
-    .site-content a[href*="//"]:not([href*="localhost"]):hover::after, .site-content a[href*="//"]:not([href*="localhost"]):focus::after {
-      position: absolute;
-      font-family: "dashicons";
-      font-size: 0.75em;
-      display: inline-block;
-      transform: translateY(-2px);
-      opacity: 0.5;
-      content: "\f504"; }
 
 
 /*# sourceMappingURL=editor.css.map*/
