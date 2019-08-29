@@ -29,10 +29,11 @@
 	},
 	"homepage": "https://github.com/fabiankaegy/finn#readme",
 	"dependencies": {
-		"@wordpress/scripts": "^3.4.0",
-		"highlight.js": "^9.15.10"
+		"highlight.js": "^9.15.10",
+		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
+		"@wordpress/scripts": "^3.4.0",
 		"@wordpress/eslint-plugin": "^2.4.0",
 		"autoprefixer": "^9.6.1",
 		"browser-sync": "^2.26.7",
@@ -40,7 +41,6 @@
 		"css-loader": "^3.2.0",
 		"mini-css-extract-plugin": "^0.8.0",
 		"node-sass": "^4.12.0",
-		"normalize.css": "^8.0.1",
 		"path": "^0.12.7",
 		"postcss-loader": "^3.0.0",
 		"postcss-preset-env": "^6.7.0",
