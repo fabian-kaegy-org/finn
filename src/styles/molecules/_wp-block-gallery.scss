@@ -2,10 +2,12 @@
 	list-style: none;
 	padding: 0;
 	position: relative;
-	.lightbox {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
+	&.lightbox-enabled {
+		img {
+			&:hover {
+				cursor: pointer;
+				filter: brightness(80%);
+			}
+		}
 	}
 }

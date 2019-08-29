@@ -773,11 +773,10 @@ textarea {
     list-style: none;
     padding: 0;
     position: relative; }
-    .site-content .wp-block-gallery .lightbox {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5); }
+    .site-content .wp-block-gallery.lightbox-enabled img:hover {
+      cursor: pointer;
+      -webkit-filter: brightness(80%);
+              filter: brightness(80%); }
   .site-content .wp-block-embed iframe {
     width: 100%; }
   .site-content .wp-block-latest-posts {

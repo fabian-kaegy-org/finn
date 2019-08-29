@@ -25,5 +25,7 @@ domReady( () => {
 		}, [] );
 
 		render( <Gallery images={ images } classNames={ gallery.classList } />, gallery );
+
+		gallery.classList.add( 'lightbox-enabled' );
 	} );
 } );
