@@ -5,6 +5,10 @@ body,
 }
 
 #page {
+	position: relative;
+}
+
+#page {
 	display: flex;
 	flex-direction: column;
 	.site-content {
