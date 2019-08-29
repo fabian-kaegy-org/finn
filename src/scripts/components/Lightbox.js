@@ -46,7 +46,7 @@ export const Lightbox = ( props ) => {
 			<Modal>
 				<div className="lightbox" ref={ lightboxRef }>
 					<button className="close" onClick={ clearImage }>
-						<span className="dashicons dashicons-no" />
+						<span className="dashicons dashicons-no-alt" />
 					</button>
 					<button onClick={ previousImage }>
 						<span className="dashicons dashicons-arrow-left-alt2" />
