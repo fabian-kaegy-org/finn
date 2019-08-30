@@ -1,12 +1,5 @@
 .lightbox {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 70%;
-	height: auto;
-	max-width: 1200px;
-	max-height: 70%;
-	height: auto;
 	margin: auto;
 	button {
 		background: transparent;
@@ -21,9 +14,18 @@
 			transition: 0.1s ease-in-out;
 		}
 		&:hover {
+			cursor: pointer;
 			.dashicons {
 				opacity: 1;
 			}
+		}
+		.dashicons-arrow-right-alt2 {
+			position: absolute;
+			right: 3rem;
+		}
+		.dashicons-arrow-left-alt2 {
+			position: absolute;
+			left: 3rem;
 		}
 		&.close {
 			position: absolute;
@@ -33,9 +35,17 @@
 	}
 	img {
 		display: block;
-		max-height: 100%;
-		max-width: 100%;
-		height: 100%;
-		width: 100%;
+		max-height: 70vh;
+		max-width: 80vw;
+		height: auto;
+		width: auto;
+		object-fit: contain;
+	}
+	.image-count {
+		color: $light-primary-color;
+		position: absolute;
+		margin: auto;
+		justify-content: center;
+		bottom: 1rem;
 	}
 }

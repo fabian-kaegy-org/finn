@@ -10,10 +10,12 @@ import { Modal, detectOutsideClick } from './Modal';
 export const Lightbox = ( props ) => {
 	const {
 		image,
-		image: { src, alt, classNames },
+		image: { src, alt, classNames, caption },
 		nextImage,
 		previousImage,
 		clearImage,
+		length,
+		index,
 	} = props;
 
 	const lightboxRef = useRef();
@@ -51,7 +53,11 @@ export const Lightbox = ( props ) => {
 					<button onClick={ previousImage }>
 						<span className="dashicons dashicons-arrow-left-alt2" />
 					</button>
-					<img src={ src } alt={ alt } className={ classNames }></img>
+					<figure>
+						<img src={ src } alt={ alt } className={ classNames }></img>
+						{ caption && <figcaption>{ caption }</figcaption> }
+					</figure>
+					<span className="image-count">{ `${ index + 1 } / ${ length }` }</span>
 					<button onClick={ nextImage }>
 						<span className="dashicons dashicons-arrow-right-alt2" />
 					</button>

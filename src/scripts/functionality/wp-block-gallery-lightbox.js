@@ -15,12 +15,19 @@ domReady( () => {
 	page.appendChild( lightboxRoot );
 
 	galleries.forEach( ( gallery ) => {
-		const imageElements = gallery.querySelectorAll( 'img' );
+		const figureElements = gallery.querySelectorAll( 'figure' );
 
-		const images = [ ...imageElements ].reduce( ( accumulator, image ) => {
+		const images = [ ...figureElements ].reduce( ( accumulator, figure ) => {
+			const image = figure.querySelector( 'img' );
+			const caption = figure.querySelector( 'figcaption' );
 			return [
 				...accumulator,
-				{ src: image.src, alt: image.alt, classNames: image.classList },
+				{
+					src: image.src,
+					alt: image.alt,
+					classNames: image.classList,
+					caption: caption ? caption.innerText : null,
+				},
 			];
 		}, [] );
 

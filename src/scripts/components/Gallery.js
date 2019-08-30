@@ -37,16 +37,16 @@ export const Gallery = ( props ) => {
 	return (
 		<>
 			{ images.map( ( image, key ) => (
-				<li className="blocks-gallery-item" key={ key }>
+				<li
+					className="blocks-gallery-item"
+					key={ key }
+					onClick={ () => {
+						setIndex( key );
+					} }
+				>
 					<figure>
-						<img
-							src={ image.src }
-							alt={ image.alt }
-							className={ image.classNames }
-							onClick={ () => {
-								setIndex( key );
-							} }
-						/>
+						<img src={ image.src } alt={ image.alt } className={ image.classNames } />
+						{ image.caption && <figcaption>{ image.caption }</figcaption> }
 					</figure>
 				</li>
 			) ) }
@@ -56,6 +56,8 @@ export const Gallery = ( props ) => {
 					nextImage={ nextImage }
 					previousImage={ previousImage }
 					clearImage={ clearImage }
+					length={ images.length }
+					index={ index }
 				/>
 			) }
 		</>
