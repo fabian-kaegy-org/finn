@@ -1,10 +1,12 @@
 .lightbox {
 	display: flex;
 	margin: auto;
+	position: relative;
 	button {
 		background: transparent;
 		border: none;
 		appearance: none;
+		position: absolute;
 		.dashicons {
 			color: $light-primary-color;
 			opacity: 0.6;
@@ -19,19 +21,22 @@
 				opacity: 1;
 			}
 		}
-		.dashicons-arrow-right-alt2 {
+		&.next {
 			position: absolute;
-			right: 3rem;
+			right: -4rem;
 		}
-		.dashicons-arrow-left-alt2 {
+		&.previous {
 			position: absolute;
-			left: 3rem;
+			left: -4rem;
 		}
 		&.close {
 			position: absolute;
-			top: 1rem;
-			right: 1rem;
+			top: -4rem;
+			right: -4rem;
 		}
+	}
+	figure {
+		margin: 0;
 	}
 	img {
 		display: block;
@@ -46,6 +51,6 @@
 		position: absolute;
 		margin: auto;
 		justify-content: center;
-		bottom: 1rem;
+		bottom: -3rem;
 	}
 }

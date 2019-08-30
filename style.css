@@ -931,13 +931,15 @@ li.comment {
 
 .lightbox {
   display: flex;
-  margin: auto; }
+  margin: auto;
+  position: relative; }
   .lightbox button {
     background: transparent;
     border: none;
     -webkit-appearance: none;
        -moz-appearance: none;
-            appearance: none; }
+            appearance: none;
+    position: absolute; }
     .lightbox button .dashicons {
       color: #ebf0f2;
       opacity: 0.6;
@@ -949,16 +951,18 @@ li.comment {
       cursor: pointer; }
       .lightbox button:hover .dashicons {
         opacity: 1; }
-    .lightbox button .dashicons-arrow-right-alt2 {
+    .lightbox button.next {
       position: absolute;
-      right: 3rem; }
-    .lightbox button .dashicons-arrow-left-alt2 {
+      right: -4rem; }
+    .lightbox button.previous {
       position: absolute;
-      left: 3rem; }
+      left: -4rem; }
     .lightbox button.close {
       position: absolute;
-      top: 1rem;
-      right: 1rem; }
+      top: -4rem;
+      right: -4rem; }
+  .lightbox figure {
+    margin: 0; }
   .lightbox img {
     display: block;
     max-height: 70vh;
@@ -972,7 +976,7 @@ li.comment {
     position: absolute;
     margin: auto;
     justify-content: center;
-    bottom: 1rem; }
+    bottom: -3rem; }
 
 .site-header {
   padding: 1rem;
