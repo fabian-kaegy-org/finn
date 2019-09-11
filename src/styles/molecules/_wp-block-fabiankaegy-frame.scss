@@ -1,0 +1,24 @@
+.wp-block-fabiankaegy-frame {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	.macbook {
+		height: 100%;
+		width: 100%;
+	}
+	.screen {
+		position: absolute;
+		bottom: 14%;
+		width: 72%;
+	}
+	&.alternative {
+		perspective: (900px);
+		.screen {
+			opacity: 1;
+			width: 100%;
+			bottom: 0;
+			transform: translateX(0.8%) translateY(-2.7%) rotateY(-30deg)
+				rotateZ(3.9deg) rotateX(7deg) scale(0.419);
+		}
+	}
+}

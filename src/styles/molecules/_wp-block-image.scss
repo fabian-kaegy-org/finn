@@ -9,7 +9,7 @@
 img {
 	height: auto;
 	object-fit: cover;
-	display: block;
+	display: inline-block;
 	transition: 0.2s ease-in-out;
 	@media (prefers-color-scheme: "dark") {
 		filter: brightness(80%);

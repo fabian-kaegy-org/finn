@@ -10,10 +10,12 @@ import { registerLanguage, highlightBlock } from 'highlight.js/lib/highlight';
 
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
+import xml from 'highlight.js/lib/languages/xml';
 import scss from 'highlight.js/lib/languages/scss';
 import php from 'highlight.js/lib/languages/php';
 import bash from 'highlight.js/lib/languages/bash';
 import json from 'highlight.js/lib/languages/json';
+import gcode from 'highlight.js/lib/languages/gcode';
 
 const languages = [
 	{ name: 'php', language: php, formated: 'PHP' },
@@ -22,6 +24,8 @@ const languages = [
 	{ name: 'bash', language: bash, formated: 'bash' },
 	{ name: 'css', language: css, formated: 'CSS' },
 	{ name: 'scss', language: scss, formated: 'SCSS' },
+	{ name: 'html', language: xml, formated: 'HTML' },
+	{ name: 'gcode', language: gcode, formated: 'G-Code' },
 ];
 
 languages.forEach( ( language ) => {

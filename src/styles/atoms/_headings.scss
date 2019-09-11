@@ -14,7 +14,7 @@ h6 {
 	*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h4,
 	*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h5,
 	*:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h6 {
-		margin-top: $large-spacing;
+		margin-top: 2em;
 	}
 }
 
@@ -31,7 +31,8 @@ h6 {
 			font-family: "dashicons";
 			opacity: 0;
 			position: absolute;
-			transform: translateX(-10px);
+			transform: translateX(-0.5em);
+			padding-right: 0.5em;
 			content: "\f103";
 		}
 		@media (hover: none) and (pointer: coarse) {
@@ -44,6 +45,10 @@ h6 {
 				opacity: 0.2;
 				transform: translateX(-1.5em);
 			}
+		}
+		&:target {
+			padding-top: 5em;
+			margin-top: calc(-4em);
 		}
 	}
 }

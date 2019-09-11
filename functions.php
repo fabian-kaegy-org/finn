@@ -44,6 +44,7 @@ include_once get_template_directory().'/includes/theme-supports.php';
 include_once get_template_directory().'/includes/enqueue-assets.php';
 include_once get_template_directory().'/includes/register-menus.php';
 include_once get_template_directory().'/includes/icon-functions.php';
+include_once get_template_directory().'/includes/remove-emoji.php';
 
 // Customizer 
 // include_once get_template_directory().'/includes/customizer/custom-controls.php';

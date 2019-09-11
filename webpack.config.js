@@ -19,6 +19,7 @@ module.exports = [
 		entry: {
 			style: './src/style.scss',
 			editor: './src/editor.scss',
+			external: './src/external.scss',
 		},
 		output: {
 			...defaultConfig.output,

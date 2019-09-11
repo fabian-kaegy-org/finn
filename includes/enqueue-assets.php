@@ -14,6 +14,13 @@ function register_assets() {
 
     wp_enqueue_style( 'dashicons' );
 
+    wp_enqueue_style(
+        'extenal-stylesheets', 
+        get_stylesheet_directory_uri(). '/external.css', 
+        [], 
+        wp_get_theme( 'Version' )
+    );
+
     if ( ! is_admin() ) {
         $script_deps_path = _get_plugin_directory() . '/build/index.deps.json';
         $script_dependencies = file_exists( $script_deps_path )
@@ -29,7 +36,8 @@ function register_assets() {
         wp_enqueue_style(
             __NAMESPACE__.'\styles', 
             get_stylesheet_directory_uri().'/style.css', 
-            []
+            ['extenal-stylesheets'],
+            wp_get_theme( 'Version' )
         );
     }
 

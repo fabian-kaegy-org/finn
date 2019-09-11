@@ -12,7 +12,13 @@
 		"lint:pkg-json": "wp-scripts lint-pkg-json",
 		"start": "wp-scripts start",
 		"test:e2e": "wp-scripts test-e2e",
-		"test:unit": "wp-scripts test-unit-js"
+		"test:unit": "wp-scripts test-unit-js",
+		"env": "wp-scripts env"
+	},
+	"wp-env": {
+		"plugin-dir": "finn",
+		"plugin-name": "Finn",
+		"welcome-build-command": "npm start"
 	},
 	"repository": {
 		"type": "git",
@@ -33,8 +39,8 @@
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^3.4.0",
 		"@wordpress/eslint-plugin": "^2.4.0",
+		"@wordpress/scripts": "^4.0.0",
 		"autoprefixer": "^9.6.1",
 		"browser-sync": "^2.26.7",
 		"browser-sync-webpack-plugin": "^2.2.2",
@@ -45,6 +51,6 @@
 		"postcss-loader": "^3.0.0",
 		"postcss-preset-env": "^6.7.0",
 		"sass-loader": "^7.3.1",
-		"webpack": "^4.39.2"
+		"webpack": "^4.39.3"
 	}
 }
