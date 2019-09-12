@@ -28,4 +28,48 @@
 			margin-bottom: 0 !important;
 		}
 	}
+
+	.alignleft,
+	.alignright {
+		width: 50%;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+	}
+
+	.alignleft {
+		@media (min-width: 600px) {
+			margin-left: -1rem !important;
+		}
+		figcaption {
+			clear: left;
+		}
+	}
+
+	.alignright {
+		@media (min-width: 600px) {
+			margin-right: -1rem !important;
+		}
+		figcaption {
+			clear: right;
+		}
+	}
+
+	.alignleft img,
+	.alignleft figcaption {
+		float: left;
+		margin-right: 1.5em;
+	}
+
+	.alignright img,
+	.alignright figcaption {
+		float: right;
+		margin-left: 1.5em;
+	}
+
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
