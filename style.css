@@ -276,6 +276,28 @@ textarea {
     width: 100%;
     max-width: 100%;
     margin: 3rem auto; }
+  .site-content .wp-block-image.lightbox-enabled figure {
+    position: relative; }
+    .site-content .wp-block-image.lightbox-enabled figure::before {
+      font-family: "dashicons";
+      content: "\f211";
+      color: #ebf0f2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 10;
+      display: block;
+      font-size: 3rem;
+      opacity: 0;
+      transition: 0.2s ease-in-out; }
+    .site-content .wp-block-image.lightbox-enabled figure:hover {
+      cursor: pointer; }
+      .site-content .wp-block-image.lightbox-enabled figure:hover::before {
+        opacity: 0.8; }
+      .site-content .wp-block-image.lightbox-enabled figure:hover img {
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); }
 
 .site-content img {
   height: auto;
@@ -679,6 +701,42 @@ li.comment {
   margin-bottom: 3rem; }
   .site-content > :last-child.alignfull {
     margin-bottom: 0 !important; }
+
+.site-content .alignleft,
+.site-content .alignright {
+  width: 50%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+@media (min-width: 600px) {
+  .site-content .alignleft {
+    margin-left: -1rem !important; } }
+
+.site-content .alignleft figcaption {
+  clear: left; }
+
+@media (min-width: 600px) {
+  .site-content .alignright {
+    margin-right: -1rem !important; } }
+
+.site-content .alignright figcaption {
+  clear: right; }
+
+.site-content .alignleft img,
+.site-content .alignleft figcaption {
+  float: left;
+  margin-right: 1.5em; }
+
+.site-content .alignright img,
+.site-content .alignright figcaption {
+  float: right;
+  margin-left: 1.5em; }
+
+.site-content .aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .comments-area {
   margin: 1rem auto;

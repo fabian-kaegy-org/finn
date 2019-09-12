@@ -4,6 +4,34 @@
 		@include full-width();
 		margin: $large-spacing auto;
 	}
+	&.lightbox-enabled {
+		figure {
+			position: relative;
+			&::before {
+				font-family: "dashicons";
+				content: "\f211";
+				color: $light-primary-color;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				z-index: 10;
+				display: block;
+				font-size: 3rem;
+				opacity: 0;
+				transition: 0.2s ease-in-out;
+			}
+			&:hover {
+				cursor: pointer;
+				&::before {
+					opacity: 0.8;
+				}
+				img {
+					filter: brightness(80%);
+				}
+			}
+		}
+	}
 }
 
 img {

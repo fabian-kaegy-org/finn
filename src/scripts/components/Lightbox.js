@@ -50,17 +50,23 @@ export const Lightbox = ( props ) => {
 					<button className="close" onClick={ clearImage }>
 						<span className="dashicons dashicons-no-alt" />
 					</button>
-					<button onClick={ previousImage } className="previous">
-						<span className="dashicons dashicons-arrow-left-alt2" />
-					</button>
+					{ length > 1 &&
+						<button onClick={ previousImage } className="previous">
+							<span className="dashicons dashicons-arrow-left-alt2" />
+						</button>
+					}
 					<figure>
 						<img src={ src } alt={ alt } className={ classNames }></img>
 						{ caption && <figcaption>{ caption }</figcaption> }
 					</figure>
+					{ length > 1 &&
 					<span className="image-count">{ `${ index + 1 } / ${ length }` }</span>
-					<button onClick={ nextImage } className="next">
-						<span className="dashicons dashicons-arrow-right-alt2" />
-					</button>
+					}
+					{ length > 1 &&
+						<button onClick={ nextImage } className="next">
+							<span className="dashicons dashicons-arrow-right-alt2" />
+						</button>
+					}
 				</div>
 			</Modal>
 		)
