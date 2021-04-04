@@ -5,14 +5,7 @@
 	"main": "src/index.js",
 	"scripts": {
 		"build": "wp-scripts build",
-		"check-engines": "wp-scripts check-engines",
-		"check-licenses": "wp-scripts check-licenses",
-		"lint:css": "wp-scripts lint-style",
-		"lint:js": "wp-scripts lint-js",
-		"lint:pkg-json": "wp-scripts lint-pkg-json",
-		"start": "wp-scripts start",
-		"test:e2e": "wp-scripts test-e2e",
-		"test:unit": "wp-scripts test-unit-js"
+		"start": "wp-scripts start"
 	},
 	"repository": {
 		"type": "git",
@@ -29,22 +22,10 @@
 	},
 	"homepage": "https://github.com/fabiankaegy/finn#readme",
 	"dependencies": {
-		"highlight.js": "^9.15.10",
+		"highlight.js": "^10.7.1",
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^3.4.0",
-		"@wordpress/eslint-plugin": "^2.4.0",
-		"autoprefixer": "^9.6.1",
-		"browser-sync": "^2.26.7",
-		"browser-sync-webpack-plugin": "^2.2.2",
-		"css-loader": "^3.2.0",
-		"mini-css-extract-plugin": "^0.8.0",
-		"node-sass": "^4.12.0",
-		"path": "^0.12.7",
-		"postcss-loader": "^3.0.0",
-		"postcss-preset-env": "^6.7.0",
-		"sass-loader": "^7.3.1",
-		"webpack": "^4.39.2"
+		"@wordpress/scripts": "^14.0.1"
 	}
 }

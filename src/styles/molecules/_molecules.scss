@@ -6,6 +6,7 @@
 @import "./navigatioins";
 
 .site-content {
+	@import "./article";
 	@import "./wp-block-image";
 	@import "./wp-block-quote";
 	@import "./wp-block-code";
