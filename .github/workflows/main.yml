@@ -37,7 +37,7 @@ jobs:
           # Remote user
           REMOTE_USER: ${{ secrets.DEPLOYMENT_SSH_USERNAME }}
           # Target directory
-          TARGET: /sites/fabian-kaegy.com/files/wp-content/themes
+          TARGET: /sites/fabian-kaegy.com/files/wp-content/themes/finn
           # An array of folder to exclude
           EXCLUDE: node_modules, .git
 
