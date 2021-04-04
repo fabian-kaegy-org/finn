@@ -22,7 +22,7 @@
 	},
 	"homepage": "https://github.com/fabiankaegy/finn#readme",
 	"dependencies": {
-		"highlight.js": "^10.7.1",
+		"highlight.js": "^10.4.1",
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
