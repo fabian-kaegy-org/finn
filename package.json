@@ -22,10 +22,18 @@
 	},
 	"homepage": "https://github.com/fabiankaegy/finn#readme",
 	"dependencies": {
-		"highlight.js": "^10.7.1",
+		"highlight.js": "^10.7.2",
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^14.0.1"
+		"@wordpress/eslint-plugin": "^9.0.2",
+		"@wordpress/scripts": "^14.1.0",
+		"cssnano": "^4.1.10",
+		"postcss-css-variables": "^0.17.0",
+		"postcss-import": "^12.0.1",
+		"postcss-mixins": "^6.2.3",
+		"postcss-nested": "^4.2.3",
+		"postcss-object-fit-images": "^1.1.2",
+		"postcss-preset-env": "^6.7.0"
 	}
 }

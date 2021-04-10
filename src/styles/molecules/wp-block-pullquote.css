@@ -1,0 +1,8 @@
+.wp-block-pullquote {
+	&.aligncenter {
+		margin: var(--standard-spacing) auto;
+	}
+	&.alignfull {
+		@mixin full-width;
+	}
+}

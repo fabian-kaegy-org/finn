@@ -54,10 +54,16 @@ export const Lightbox = ( props ) => {
 						<span className="dashicons dashicons-arrow-left-alt2" />
 					</button>
 					<figure>
-						<img src={ src } alt={ alt } className={ classNames }></img>
+						<img
+							src={ src }
+							alt={ alt }
+							className={ classNames }
+						></img>
 						{ caption && <figcaption>{ caption }</figcaption> }
 					</figure>
-					<span className="image-count">{ `${ index + 1 } / ${ length }` }</span>
+					<span className="image-count">{ `${
+						index + 1
+					} / ${ length }` }</span>
 					<button onClick={ nextImage } className="next">
 						<span className="dashicons dashicons-arrow-right-alt2" />
 					</button>

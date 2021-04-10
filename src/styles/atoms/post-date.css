@@ -1,0 +1,7 @@
+.post-date {
+	font-style: italic;
+	color: var(primary-color);
+	@media (prefers-color-scheme: dark) {
+		color: #8d9394;
+	}
+}

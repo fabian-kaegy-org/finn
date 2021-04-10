@@ -1,0 +1,21 @@
+.wp-block-image {
+	@mixin standard-width;
+	&.alignfull {
+		@mixin full-width;
+		margin: var(--large-spacing) auto;
+	}
+}
+
+img {
+	height: auto;
+	object-fit: cover;
+	display: block;
+	transition: 0.2s ease-in-out;
+	@media (prefers-color-scheme: dark) {
+		filter: brightness(80%);
+		&:hover,
+		&:focus {
+			filter: brightness(100%);
+		}
+	}
+}

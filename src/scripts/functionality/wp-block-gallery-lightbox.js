@@ -17,21 +17,27 @@ domReady( () => {
 	galleries.forEach( ( gallery ) => {
 		const figureElements = gallery.querySelectorAll( 'figure' );
 
-		const images = [ ...figureElements ].reduce( ( accumulator, figure ) => {
-			const image = figure.querySelector( 'img' );
-			const caption = figure.querySelector( 'figcaption' );
-			return [
-				...accumulator,
-				{
-					src: image.src,
-					alt: image.alt,
-					classNames: image.classList,
-					caption: caption ? caption.innerText : null,
-				},
-			];
-		}, [] );
+		const images = [ ...figureElements ].reduce(
+			( accumulator, figure ) => {
+				const image = figure.querySelector( 'img' );
+				const caption = figure.querySelector( 'figcaption' );
+				return [
+					...accumulator,
+					{
+						src: image.src,
+						alt: image.alt,
+						classNames: image.classList,
+						caption: caption ? caption.innerText : null,
+					},
+				];
+			},
+			[]
+		);
 
-		render( <Gallery images={ images } classNames={ gallery.classList } />, gallery );
+		render(
+			<Gallery images={ images } classNames={ gallery.classList } />,
+			gallery
+		);
 
 		gallery.classList.add( 'lightbox-enabled' );
 	} );

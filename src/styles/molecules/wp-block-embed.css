@@ -1,0 +1,5 @@
+.wp-block-embed {
+	& iframe {
+		width: 100%;
+	}
+}

@@ -1,0 +1,4 @@
+.comments-area {
+	@mixin standard-width;
+	margin-bottom: var(--large-spacing);
+}

@@ -1,0 +1,10 @@
+.wp-block-button {
+	& a {
+		text-decoration: none;
+		&:hover {
+			&::after {
+				content: none;
+			}
+		}
+	}
+}

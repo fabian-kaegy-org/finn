@@ -6,7 +6,7 @@ import domReady from '@wordpress/dom-ready';
 /**
  * External dependencies
  */
-import { registerLanguage, highlightBlock } from 'highlight.js/lib/highlight';
+import { registerLanguage, highlightBlock } from 'highlight.js';
 
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
@@ -29,32 +29,34 @@ languages.forEach( ( language ) => {
 } );
 
 domReady( () => {
-	document.querySelectorAll( 'pre.wp-block-code code' ).forEach( ( codeBlock ) => {
-		const parent = codeBlock.parentNode;
+	document
+		.querySelectorAll( 'pre.wp-block-code code' )
+		.forEach( ( codeBlock ) => {
+			const parent = codeBlock.parentNode;
 
-		highlightBlock( codeBlock );
+			highlightBlock( codeBlock );
 
-		languages.forEach( ( language ) => {
+			languages.forEach( ( language ) => {
+				/**
+				 * check wether the .wp-block-code element has a custom class
+				 * that equals one of the supported languages
+				 */
+				if ( parent.classList.contains( language.name ) ) {
+					codeBlock.classList.add( language.name );
+				}
+
+				/**
+				 * check the code element for a class that responds to one of the
+				 * supported Languages to add the Formated Name as an rel attribute.
+				 */
+				if ( codeBlock.classList.contains( language.name ) ) {
+					codeBlock.setAttribute( 'rel', language.formated );
+				}
+			} );
+
 			/**
-			 * check wether the .wp-block-code element has a custom class
-			 * that equals one of the supported languages
+			 * add hljs class to .wp-block-code element to enable styling
 			 */
-			if ( parent.classList.contains( language.name ) ) {
-				codeBlock.classList.add( language.name );
-			}
-
-			/**
-			 * check the code element for a class that responds to one of the
-			 * supported Languages to add the Formated Name as an rel attribute.
-			 */
-			if ( codeBlock.classList.contains( language.name ) ) {
-				codeBlock.setAttribute( 'rel', language.formated );
-			}
+			parent.classList.add( 'hljs' );
 		} );
-
-		/**
-		 * add hljs class to .wp-block-code element to enable styling
-		 */
-		parent.classList.add( 'hljs' );
-	} );
 } );

@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	font-family: var(--font-family);
+	font-size: 18px;
+	line-height: 1.5;
+	color: var(--dark-color);
+	@media (prefers-color-scheme: dark) {
+		background: #292c2c;
+		color: var(--light-color);
+	}
+}

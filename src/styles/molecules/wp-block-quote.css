@@ -1,0 +1,23 @@
+.wp-block-quote {
+	margin: var(--standard-spacing) auto !important;
+	&.alignwide,
+	&.alignfull {
+		margin: var(--medium-spacing) auto !important;
+	}
+	padding: var(--standard-spacing) var(--medium-spacing) !important;
+	background: var(--light-primary-color);
+	border-color: var(--dark-primary-color);
+	& p {
+		font-style: italic;
+	}
+	& cite {
+		font-size: 1rem;
+		&::before {
+			content: "-- ";
+		}
+	}
+	@media (prefers-color-scheme: dark) {
+		background: var(--dark-primary-color);
+		border-color: var(--light-primary-color);
+	}
+}

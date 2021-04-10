@@ -45,8 +45,14 @@ export const Gallery = ( props ) => {
 					} }
 				>
 					<figure>
-						<img src={ image.src } alt={ image.alt } className={ image.classNames } />
-						{ image.caption && <figcaption>{ image.caption }</figcaption> }
+						<img
+							src={ image.src }
+							alt={ image.alt }
+							className={ image.classNames }
+						/>
+						{ image.caption && (
+							<figcaption>{ image.caption }</figcaption>
+						) }
 					</figure>
 				</li>
 			) ) }

@@ -1,0 +1,19 @@
+.wp-block-latest-posts {
+	list-style: none;
+	padding: 0;
+	&.is-grid {
+		& li {
+			padding: var(--standard-spacing);
+			background-color: var(--light-primary-color);
+			&:hover {
+				background-color: var(light-primary-color);
+			}
+			@media (prefers-color-scheme: dark) {
+				background-color: var(--dark-primary-color);
+				&:hover {
+					background-color: var(--dark-primary-color);
+				}
+			}
+		}
+	}
+}

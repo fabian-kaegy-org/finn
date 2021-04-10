@@ -1,0 +1,11 @@
+body.blog,
+body.archive {
+	& .site-content {
+		& article {
+			margin-bottom: var(--large-spacing);
+			& .entry-title {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+}

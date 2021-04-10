@@ -1,8 +1,0 @@
-.wp-block-pullquote {
-	&.aligncenter {
-		margin: $standard-spacing auto;
-	}
-	&.alignfull {
-		@include full-width();
-	}
-}

@@ -1,0 +1,24 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+	& code {
+		display: inline-block;
+		word-break: keep-all;
+		background-color: var(--light-color);
+		padding: 0em 0.25em;
+		border-radius: 6px;
+		@media (prefers-color-scheme: dark) {
+			background-color: var(--dark-primary-color);
+			color: var(--light-primary-color);
+		}
+	}
+}
+
+code {
+	font-family: var(--font-family-code);
+}

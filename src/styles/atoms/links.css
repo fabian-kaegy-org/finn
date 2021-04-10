@@ -1,0 +1,15 @@
+a {
+	text-decoration: none;
+	color: var(--link-color);
+	&:hover {
+		color: var(--primary-color);
+	}
+}
+
+.site-content {
+	& a {
+		text-decoration: underline;
+		text-underline-offset: 2px;
+		text-decoration-skip: auto;
+	}
+}

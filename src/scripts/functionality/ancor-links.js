@@ -7,9 +7,14 @@ domReady( () => {
 	if ( ! window.ontouchstart ) {
 		const headingTypes = [ 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' ];
 
-		const headingElements = headingTypes.reduce( ( accumulator, heading ) => {
-			return [ ...document.getElementsByTagName( heading ), ...accumulator ];
-		} );
+		const headingElements = headingTypes.reduce(
+			( accumulator, heading ) => {
+				return [
+					...document.getElementsByTagName( heading ),
+					...accumulator,
+				];
+			}
+		);
 		const withAnchor = headingElements.filter( ( element ) => element.id );
 
 		withAnchor.forEach( ( element ) => {

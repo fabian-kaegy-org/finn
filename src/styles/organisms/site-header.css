@@ -1,0 +1,10 @@
+.site-header {
+	padding: var(--standard-spacing);
+	background-color: var(--light-primary-color);
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--dark-primary-color);
+	}
+	@mixin inflate-margins;
+	text-align: center;
+	z-index: 100;
+}

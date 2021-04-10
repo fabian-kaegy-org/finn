@@ -6,5 +6,6 @@ import './scripts/functionality/ancor-links';
 import './scripts/functionality/wp-block-gallery-lightbox';
 
 import 'normalize.css';
+import 'highlight.js/styles/monokai.css';
 
-import './index.scss';
+import './index.css';
