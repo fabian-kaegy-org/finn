@@ -38,7 +38,7 @@ function register_assets() {
 	wp_enqueue_style(
 		__NAMESPACE__ . '\styles',
 		get_stylesheet_directory_uri() . '/build/index.css',
-		[ 'dashicons' ],
+		[ 'dashicons', 'wp-block-library', 'wp-block-library-theme' ],
 		wp_get_theme( 'Version' )
 	);
 
