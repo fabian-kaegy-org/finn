@@ -3,9 +3,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0;
+	margin-bottom: 0.5rem;
 	& li {
 		& a {
-			margin: 5px;
+			display: inline-block;
+			margin-bottom: 10px;
+			margin-right: 10px;
 			text-decoration: none;
 			padding: 5px 10px;
 			background-color: var(--light-primary-color);
@@ -20,9 +23,9 @@
 			}
 			border-radius: 6px;
 		}
-		&:first-of-type {
+		&:last-of-type {
 			& a {
-				margin-left: 0;
+				margin-right: 0;
 			}
 		}
 	}
