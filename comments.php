@@ -21,7 +21,8 @@ if ( post_password_required() ) {
 
 	<?php
 	// You can start editing here -- including this comment!
-	if ( have_comments() ) : ?>
+	if ( have_comments() ) :
+		?>
 		<h2 class="comments-title">
 			<?php
 			$comments_number = get_comments_number();
@@ -47,19 +48,24 @@ if ( post_password_required() ) {
 
 		<ol class="comment-list">
 			<?php
-				wp_list_comments( array(
-					'avatar_size' => 100,
-					'style'       => 'ol',
-					'short_ping'  => true,
-					'reply_text'  => "<span class='dashicons dashicons-arrow-left-alt'></span>" . __( 'Reply', 'finn' ),
-				) );
+				wp_list_comments(
+					[
+						'avatar_size' => 100,
+						'style'       => 'ol',
+						'short_ping'  => true,
+						'reply_text'  => "<span class='dashicons dashicons-arrow-left-alt'></span>" . __( 'Reply', 'finn' ),
+					]
+				);
 			?>
 		</ol>
 
-		<?php the_comments_pagination( array(
-			'prev_text' => "<span class='dashicons dashicons-arrow-left-alt'></span>" . '<span class="screen-reader-text">' . __( 'Previous', 'finn' ) . '</span>',
-			'next_text' => '<span class="screen-reader-text">' . __( 'Next', 'finn' ) . '</span>' . "<span class='dashicons dashicons-arrow-left-right'></span>",
-		) );
+		<?php
+		the_comments_pagination(
+			[
+				'prev_text' => "<span class='dashicons dashicons-arrow-left-alt'></span>" . '<span class="screen-reader-text">' . __( 'Previous', 'finn' ) . '</span>',
+				'next_text' => '<span class="screen-reader-text">' . __( 'Next', 'finn' ) . '</span>' . "<span class='dashicons dashicons-arrow-left-right'></span>",
+			]
+		);
 
 	endif; // Check for have_comments().
 
