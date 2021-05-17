@@ -23,12 +23,7 @@
 			}
 		}
 	}
-	& p {
-		color: #f1f5f6;
-		& a {
-			color: #f1f5f6;
-		}
-	}
+	
 	@media (prefers-color-scheme: dark) {
 		background-color: #303333;
 	}
