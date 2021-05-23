@@ -7,6 +7,10 @@
 		@mixin full-width;
 		margin: var(--large-spacing) auto;
 	}
+
+	@nest .editor-styles-wrapper & {
+		width: 100%;
+	}
 }
 
 img {
