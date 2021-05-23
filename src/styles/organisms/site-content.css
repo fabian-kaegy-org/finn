@@ -2,21 +2,26 @@
 	& > * {
 		@mixin standard-width;
 	}
+
 	& > .alignwide {
 		@mixin extended-width;
 	}
+
 	& > .alignfull {
 		@mixin full-width;
 	}
+
 	& > .alignleft {
 		float: left;
 	}
+
 	& > .alignleft {
 		float: right;
 	}
 
 	& > :first-child {
 		margin-top: var(--large-spacing);
+
 		&.alignfull {
 			margin-top: 0 !important;
 		}
@@ -24,6 +29,7 @@
 
 	& > :last-child {
 		margin-bottom: var(--large-spacing);
+		
 		&.alignfull {
 			margin-bottom: 0 !important;
 		}

@@ -1,5 +1,8 @@
 .wp-block-image {
 	@mixin standard-width;
+
+	margin: var(--medium-spacing) auto;
+
 	&.alignfull {
 		@mixin full-width;
 		margin: var(--large-spacing) auto;
