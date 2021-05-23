@@ -1,4 +1,7 @@
-:root {
+:root,
+.editor-styles-wrapper {
+	font-size: 18px;
+
 	--font-family: "source-serif-pro", serif;
 	--font-family-sans: "source-sans-pro", sans-serif;
 	--font-family-code: "source-code-pro", monospace;
