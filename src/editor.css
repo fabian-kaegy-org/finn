@@ -1,4 +1,6 @@
-@import "./styles/variables";
-
-@import "./styles/general/global";
-@import "./styles/atoms/links";
+@import "./styles/variables.css";
+@import "./styles/general/general.css";
+@import "./styles/templates/templates.css";
+@import "./styles/organisms/organisms.css";
+@import "./styles/molecules/molecules.css";
+@import "./styles/atoms/atoms.css";
