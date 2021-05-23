@@ -1,6 +1,8 @@
 @define-mixin standard-width {
 	margin: var(--standard-spacing) auto;
 	max-width: 90%;
+	width: 100%;
+
 	@media (min-width: 600px) {
 		max-width: 70%;
 	}
@@ -12,6 +14,8 @@
 @define-mixin extended-width {
 	margin: var(--medium-spacing) auto;
 	max-width: 95%;
+	width: 100%;
+
 	@media (min-width: 600px) {
 		max-width: 80%;
 	}
@@ -23,6 +27,7 @@
 @define-mixin full-width {
 	margin: var(--large-spacing) 0;
 	max-width: 100%;
+	width: 100%;
 }
 
 @define-mixin inflate-margins {
