@@ -7,7 +7,8 @@ h6 {
 	font-family: var(--font-family-sans);
 	hyphens: auto;
 }
-.site-content {
+.site-content,
+.editor-styles-wrapper {
 	& *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h1,
 	& *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h2,
 	& *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) + h3,

@@ -6,7 +6,8 @@ a {
 	}
 }
 
-.site-content {
+.site-content,
+.editor-styles-wrapper {
 	& a {
 		text-decoration: underline;
 		text-underline-offset: 2px;
