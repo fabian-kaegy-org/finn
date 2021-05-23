@@ -1,4 +1,5 @@
-.site-content {
+.site-content,
+.editor-styles-wrapper {
 	& > * {
 		@mixin standard-width;
 	}
@@ -29,7 +30,7 @@
 
 	& > :last-child {
 		margin-bottom: var(--large-spacing);
-		
+
 		&.alignfull {
 			margin-bottom: 0 !important;
 		}
