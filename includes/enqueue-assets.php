@@ -42,6 +42,6 @@ function register_assets() {
 		wp_get_theme( 'Version' )
 	);
 
-	add_editor_style( 'editor.css' );
+	add_editor_style( get_stylesheet_directory_uri() . '/build/editor.css' );
 
 }
