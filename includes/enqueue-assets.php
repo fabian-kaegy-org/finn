@@ -42,8 +42,22 @@ function register_assets() {
 		wp_get_theme( 'Version' )
 	);
 
-	wp_enqueue_style( 'dashicons' );
-
 	add_editor_style( '/build/index.css' );
 
+}
+
+add_action( 'wp_footer', 'register_wp_footer' );
+
+/**
+ * register theme assets in footer
+ */
+function register_wp_footer() {
+	global $wp_version;
+
+	wp_enqueue_style(
+		'dashicons',
+		'/wp-includes/css/dashicons.min.css',
+		[],
+		$wp_version
+	);
 }
