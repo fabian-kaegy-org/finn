@@ -46,7 +46,7 @@ function register_assets() {
 
 }
 
-add_action( 'wp_footer', 'register_wp_footer' );
+add_action( 'wp_footer', __NAMESPACE__ . '\register_wp_footer' );
 
 /**
  * register theme assets in footer
