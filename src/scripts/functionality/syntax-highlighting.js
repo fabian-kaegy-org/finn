@@ -6,7 +6,7 @@ import domReady from '@wordpress/dom-ready';
 /**
  * External dependencies
  */
-import { registerLanguage, highlightBlock } from 'highlight.js';
+import { registerLanguage, highlightElement } from 'highlight.js';
 
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
@@ -34,7 +34,7 @@ domReady( () => {
 		.forEach( ( codeBlock ) => {
 			const parent = codeBlock.parentNode;
 
-			highlightBlock( codeBlock );
+			highlightElement( codeBlock );
 
 			languages.forEach( ( language ) => {
 				/**
