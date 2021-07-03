@@ -38,9 +38,11 @@ function register_assets() {
 	wp_enqueue_style(
 		__NAMESPACE__ . '\styles',
 		get_stylesheet_directory_uri() . '/build/index.css',
-		[ 'dashicons', 'wp-block-library', 'wp-block-library-theme' ],
+		[ 'wp-block-library', 'wp-block-library-theme' ],
 		wp_get_theme( 'Version' )
 	);
+
+	wp_enqueue_style( 'dashicons' );
 
 	add_editor_style( '/build/index.css' );
 
