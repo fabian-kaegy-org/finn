@@ -21,6 +21,6 @@
 	--huge-spacing: 5rem;
 
 	@media (prefers-color-scheme: dark) {
-		--link-color: #a0bac1;
+		--link-color: #a2bdc4;
 	}
 }
