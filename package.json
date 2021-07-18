@@ -5,6 +5,7 @@
 	"main": "src/index.js",
 	"scripts": {
 		"build": "wp-scripts build",
+		"analyze": "wp-scripts build --webpack-bundle-analyzer",
 		"start": "wp-scripts start"
 	},
 	"repository": {
