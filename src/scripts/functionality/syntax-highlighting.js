@@ -6,7 +6,7 @@ import domReady from '@wordpress/dom-ready';
 /**
  * External dependencies
  */
-import { registerLanguage, highlightElement } from 'highlight.js';
+import { registerLanguage, highlightElement } from 'highlight.js/lib/core';
 
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
