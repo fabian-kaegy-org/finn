@@ -42,6 +42,9 @@ function register_assets() {
 		wp_get_theme( 'Version' )
 	);
 
+	wp_deregister_script( 'wp-mediaelement' );
+	wp_deregister_style( 'wp-mediaelement' );
+
 	add_editor_style( '/build/index.css' );
 
 }
