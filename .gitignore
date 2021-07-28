@@ -10,3 +10,5 @@ coverage
 /style.css.map
 /editor.js
 .DS_Store
+
+/vendor/

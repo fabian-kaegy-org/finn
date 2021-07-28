@@ -1,0 +1,12 @@
+{
+    "name": "fabiankaegy/finn",
+    "description": "WordPress Theme for the fabian-kaegy.com blog",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "Fabian Kägy",
+            "email": "mail@fabian-kaegy.de"
+        }
+    ],
+    "require": {}
+}

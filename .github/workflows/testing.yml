@@ -1,0 +1,49 @@
+name: WordPress Tests
+on: [push]
+jobs:
+  e2e-test-js:
+    name: 'E2E test'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
+      - name: Read .nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ steps.nvm.outputs.NVMRC }}
+
+      - name: Install Node dependencies
+        run: npm ci
+        env:
+          CI: true
+
+      - name: Install Composer dependencies
+        run: composer install --prefer-dist --optimize-autoloader --no-progress --no-interaction
+
+      - name: Build plugin
+        run: npm run build
+
+      - name: Start Docker environment
+        run: npm run env:start
+        env:
+          COMPOSE_INTERACTIVE_NO_CLI: true
+
+      - name: Run E2E tests
+        run: npm test
+
+      - name: Stop Docker environment
+        run: npm run env:stop
+        if: always()
+        env:
+          COMPOSE_INTERACTIVE_NO_CLI: true
