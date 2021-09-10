@@ -1,10 +1,9 @@
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
 const DependencyExtractionWebpackPlugin = require( '@wordpress/dependency-extraction-webpack-plugin' );
 
-
 module.exports = {
 	...defaultConfig,
-    plugins: [
+	plugins: [
 		...defaultConfig.plugins,
 		// WP_NO_EXTERNALS global variable controls whether scripts' assets get
 		// generated, and the default externals set.
