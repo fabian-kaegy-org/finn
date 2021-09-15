@@ -1,0 +1,9 @@
+.wp-block-post-terms {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.wp-block-post-terms__separator {
+    display: none;
+}

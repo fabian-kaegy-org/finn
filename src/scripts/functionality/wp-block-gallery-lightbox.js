@@ -11,7 +11,7 @@ import { Gallery } from '../components/Gallery';
 domReady( () => {
 	const galleries = document.querySelectorAll( '.wp-block-gallery' );
 	const lightboxRoot = document.createElement( 'div' );
-	const page = document.getElementById( 'page' );
+	const page = document.querySelector( '.site-content' );
 	page.appendChild( lightboxRoot );
 
 	galleries.forEach( ( gallery ) => {

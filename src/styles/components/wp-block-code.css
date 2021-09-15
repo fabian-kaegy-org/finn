@@ -2,28 +2,26 @@
 	border: none;
 	padding: 0;
 	height: auto;
-	@mixin standard-width;
 	position: relative;
 	border-radius: 8px;
 	overflow: hidden;
-	margin: var(--medium-spacing) auto;
+	margin: var(--wp--style--block-gap) auto;
 	& code {
-		font-size: var(--standard-spacing);
 		height: 100%;
 		width: 100%;
-		padding: var(--standard-spacing);
+		padding: var(--wp--style--block-gap);
 		&:before {
 			content: attr(rel);
 			margin-top: -1px;
-			font-family: var(--font-family-code);
+			font-family: var(--wp--preset--font-family--code);
 			color: #666666;
 			@media (prefers-color-scheme: dark) {
 				color: #aaaaaa;
 			}
 			text-align: center;
-			background-color: var(--light-color);
+			background-color: var(--wp--preset--color--eggshell);
 			@media (prefers-color-scheme: dark) {
-				background-color: var(--dark-color);
+				background-color: var(--wp--preset--color--dusk);
 			}
 			width: 100%;
 			display: block;
@@ -42,7 +40,7 @@
 			@media (prefers-color-scheme: dark) {
 				background-color: #151616;
 			}
-			padding-top: var(--large-spacing);
+			padding-top: calc(var(--wp--style--block-gap) * 2);
 		}
 	}
 }

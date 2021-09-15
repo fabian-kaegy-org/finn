@@ -1,6 +1,83 @@
-@import "./styles/variables.css";
-@import "./styles/general/general.css";
-@import "./styles/templates/templates.css";
-@import "./styles/organisms/organisms.css";
-@import "./styles/molecules/molecules.css";
-@import "./styles/atoms/atoms.css";
+/**
+ * Finn - WordPress Theme
+ * fabian-kaegy.com
+ *
+ * Main stylesheet for the theme.
+ *
+ * Theme styles follow http://cssguidelin.es/ and are organized according to
+ * Inverted Triangle CSS (ITCSS) principles put forth by Harry Roberts. In
+ * short, each layer of CSS gets more specific as you move down this page.
+ *
+ */
+
+/*--------------------------------------------------------------
+# Settings - Global variables, config switches.
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Tools - Default mixins and functions.
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Generic - Ground-zero styles (resets, box-sizing, etc.).
+--------------------------------------------------------------*/
+@import url('./styles/generic/box-sizing.css');
+@import url('./styles/generic/font.css');
+
+/*--------------------------------------------------------------
+# Elements - Unclassed HTML elements (type selectors).
+--------------------------------------------------------------*/
+@import url('./styles/elements/link.css');
+@import url('./styles/elements/image.css');
+@import url('./styles/elements/code.css');
+@import url('./styles/elements/tag.css');
+
+/*--------------------------------------------------------------
+# Objects - Undecorated design patterns.
+--------------------------------------------------------------*/
+@import url('./styles/objects/site-header.css');
+@import url('./styles/objects/site-content.css');
+@import url('./styles/objects/site-footer.css');
+
+
+/*--------------------------------------------------------------
+# Blocks - editor related styles.
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Components - specific UI components.
+--------------------------------------------------------------*/
+@import url('./styles/components/wp-block-site-title.css');
+@import url('./styles/components/wp-block-post-terms.css');
+@import url('./styles/components/wp-block-post-featured-image.css');
+@import url('./styles/components/wp-block-code.css');
+@import url('./styles/components/wp-block-gallery.css');
+@import url('./styles/components/lightbox.css');
+@import url('./styles/components/modal-container.css');
+@import url('./styles/components/comment-list.css');
+
+/*--------------------------------------------------------------
+# Utilities - Helpers and overrides.
+--------------------------------------------------------------*/
+@import url('./styles/utilities/alignwide.css');
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Legacy - Legacy styles of the old non FSE theme
+--------------------------------------------------------------*/
+/* @import "./styles/variables.css";
+@import "./styles/legacy/general/general.css";
+@import "./styles/legacy/templates/templates.css";
+@import "./styles/legacy/organisms/organisms.css";
+@import "./styles/legacy/molecules/molecules.css";
+@import "./styles/legacy/atoms/atoms.css"; */

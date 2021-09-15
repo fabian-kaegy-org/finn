@@ -1,18 +1,3 @@
-.wp-block-image {
-	@mixin standard-width;
-
-	margin: var(--large-spacing) auto;
-	
-	&.alignfull {
-		@mixin full-width;
-		margin: var(--large-spacing) auto;
-	}
-
-	@nest .editor-styles-wrapper & {
-		width: 100%;
-	}
-}
-
 img {
 	height: auto;
 	object-fit: cover;

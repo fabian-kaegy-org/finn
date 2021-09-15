@@ -1,4 +1,4 @@
-.site-content,
+/* .site-content,
 .editor-styles-wrapper {
 	& > * {
 		@mixin standard-width;
@@ -35,4 +35,4 @@
 			margin-bottom: 0 !important;
 		}
 	}
-}
+} */

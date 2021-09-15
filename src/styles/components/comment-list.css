@@ -5,13 +5,13 @@
 }
 
 .comment-list .children {
-	margin-left: var(--standard-spacing);
+	margin-left: var(--wp--style--block-gap);
 }
 
 li.comment {
 	padding: 0;
-	padding-left: var(--standard-spacing);
-	border-left: 5px solid var(--primary-color);
+	padding-left: var(--wp--style--block-gap);
+	border-left: 5px solid var(--wp--preset--color--primary);
 
 	@media (min-width: 600px) {
 		&:before {
@@ -37,7 +37,7 @@ li.comment {
 			left: 0;
 			border-radius: 300px;
 			display: block;
-			margin-bottom: var(--standard-spacing);
+			margin-bottom: var(--wp--style--block-gap);
 			@media (min-width: 600px) {
 				position: absolute;
 			}

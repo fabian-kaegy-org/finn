@@ -1,0 +1,4 @@
+.alignwide,
+.alignwide + * {
+    --wp--style--block-gap: 4rem;
+}

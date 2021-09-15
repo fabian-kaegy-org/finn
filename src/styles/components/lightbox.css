@@ -8,7 +8,7 @@
 		appearance: none;
 		position: absolute;
 		& .dashicons {
-			color: var(--light-primary-color);
+			color: var(--wp--preset--color--light-primary);
 			opacity: 0.6;
 			height: 3rem;
 			width: 3rem;
@@ -47,7 +47,7 @@
 		object-fit: contain;
 	}
 	& .image-count {
-		color: var(--light-primary-color);
+		color: var(--wp--preset--color--light-primary);
 		position: absolute;
 		margin: auto;
 		justify-content: center;
