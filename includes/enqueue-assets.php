@@ -1,4 +1,9 @@
-<?php 
+<?php
+/**
+ * Enqueue assets
+ *
+ * @package finn
+ */
 
 namespace fabiankaegy\finn;
 

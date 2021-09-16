@@ -1,4 +1,9 @@
-<?php 
+<?php
+/**
+ * Theme Supports
+ *
+ * @package finn
+ */
 
 namespace fabiankaegy\finn;
 
