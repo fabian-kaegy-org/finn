@@ -67,21 +67,3 @@
 # Utilities - Helpers and overrides.
 --------------------------------------------------------------*/
 @import url('./styles/utilities/alignwide.css');
-
-
-
-
-
-
-
-
-
-/*--------------------------------------------------------------
-# Legacy - Legacy styles of the old non FSE theme
---------------------------------------------------------------*/
-/* @import "./styles/variables.css";
-@import "./styles/legacy/general/general.css";
-@import "./styles/legacy/templates/templates.css";
-@import "./styles/legacy/organisms/organisms.css";
-@import "./styles/legacy/molecules/molecules.css";
-@import "./styles/legacy/atoms/atoms.css"; */

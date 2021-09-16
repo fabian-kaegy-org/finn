@@ -18,11 +18,7 @@ textarea {
 	color: var(--wp--preset--color--dusk);
 	border: 1px solid var(--wp--preset--color--light-primary);
 	background-color: var(--wp--preset--color--light-primary);
-	@media (prefers-color-scheme: dark) {
-		color: var(--wp--preset--color--light-primary);
-		border: 1px solid var(--wp--preset--color--dusk);
-		background-color: var(--wp--preset--color--dusk);
-	}
+	
 	&:focus {
 		outline: none;
 		border: 1px solid var(--wp--preset--color--primary);

@@ -2,8 +2,11 @@
 	list-style: none;
 	padding: 0;
 	position: relative;
+	
 	&.lightbox-enabled {
+		
 		& li {
+			
 			&::before {
 				font-family: "dashicons";
 				content: "\f211";
@@ -18,15 +21,19 @@
 				opacity: 0;
 				transition: 0.2s ease-in-out;
 			}
+			
 			&:hover {
 				cursor: pointer;
+				
 				&::before {
 					opacity: 0.8;
 				}
+				
 				& img {
 					filter: brightness(80%);
 				}
 			}
+			
 			& img {
 				position: relative;
 			}
