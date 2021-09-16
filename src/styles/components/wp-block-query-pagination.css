@@ -1,0 +1,4 @@
+.wp-block-query-pagination {
+    justify-content: center;
+    gap: calc(var(--wp--style--block-gap) * 0.5);
+}

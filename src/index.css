@@ -61,6 +61,7 @@
 @import url('./styles/components/modal-container.css');
 @import url('./styles/components/comment-list.css');
 @import url('./styles/components/wp-block-post-comments.css');
+@import url('./styles/components/wp-block-query-pagination.css');
 
 /*--------------------------------------------------------------
 # Utilities - Helpers and overrides.
