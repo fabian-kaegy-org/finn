@@ -23,29 +23,22 @@ function register_assets() {
 		'typekit-font',
 		'https://use.typekit.net/dce7mhi.css',
 		[],
-		wp_get_theme( 'Version' )
+		'1.0.0'
 	);
 
-	$script_asset_path = _get_plugin_directory() . '/build/index.asset.php';
-	$script_asset      = file_exists( $script_asset_path )
-		? require $script_asset_path
-		: [
-			'dependencies' => [],
-			'version'      => filemtime( _get_plugin_directory() . '/build/index.js' ),
-		];
 	wp_enqueue_script(
 		__NAMESPACE__ . '\main-script',
 		get_stylesheet_directory_uri() . '/build/index.js',
-		array_merge( $script_asset['dependencies'], [] ),
-		$script_asset['version'],
+		[],
+		filemtime( _get_plugin_directory() . '/build/index.js' ),
 		true
 	);
 
 	wp_enqueue_style(
 		__NAMESPACE__ . '\styles',
 		get_stylesheet_directory_uri() . '/build/index.css',
-		[ 'wp-block-library', 'wp-block-library-theme' ],
-		wp_get_theme( 'Version' )
+		[],
+		filemtime( _get_plugin_directory() . '/build/index.css' )
 	);
 
 	add_editor_style( 'https://use.typekit.net/dce7mhi.css' );
