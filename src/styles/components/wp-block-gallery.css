@@ -7,7 +7,7 @@
 			&::before {
 				font-family: "dashicons";
 				content: "\f211";
-				color: var(--light-primary-color);
+				color: var(--wp--preset--color--eggshell);
 				position: absolute;
 				top: 50%;
 				left: 50%;
