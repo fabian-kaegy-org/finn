@@ -167,6 +167,14 @@
 						"bottom": "calc(var(--wp--style--block-gap) * 0.5)"
 					}
 				}
+			},
+			"core/social-links": {
+				"spacing": {
+					"margin": {
+						"top": "1rem !important",
+						"bottom": "1rem !important"
+					}
+				}
 			}
 		},
 		"elements": {
