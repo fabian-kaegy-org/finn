@@ -12,3 +12,5 @@ coverage
 .DS_Store
 
 /vendor/
+/cypress/videos
+/cypress/screenshots

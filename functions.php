@@ -1,9 +1,14 @@
-<?php 
+<?php
+/**
+ * Functions
+ *
+ * @package finn
+ */
 
 namespace fabiankaegy\finn;
 
 if ( ! defined( 'ABSPATH' ) ) {
-    exit;
+	exit;
 };
 
 /**
@@ -38,14 +43,6 @@ function _get_plugin_url() {
 	return $plugin_url;
 }
 
-
 // Includes
-include_once get_template_directory().'/includes/theme-supports.php';
-include_once get_template_directory().'/includes/enqueue-assets.php';
-include_once get_template_directory().'/includes/register-menus.php';
-include_once get_template_directory().'/includes/icon-functions.php';
-
-// Customizer 
-// include_once get_template_directory().'/includes/customizer/custom-controls.php';
-// include_once get_template_directory().'/includes/customizer/sections.php';
-// include_once get_template_directory().'/includes/customizer/settings.php';
+require_once get_template_directory() . '/includes/theme-supports.php';
+require_once get_template_directory() . '/includes/enqueue-assets.php';

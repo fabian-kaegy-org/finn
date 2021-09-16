@@ -1,4 +1,9 @@
-<?php 
+<?php
+/**
+ * Enqueue assets
+ *
+ * @package finn
+ */
 
 namespace fabiankaegy\finn;
 
@@ -7,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 };
 
 add_action( 'init', __NAMESPACE__ . '\register_assets' );
+add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\register_assets' );
 
 /**
  * register theme assets
@@ -42,9 +48,7 @@ function register_assets() {
 		wp_get_theme( 'Version' )
 	);
 
-	wp_deregister_script( 'wp-mediaelement' );
-	wp_deregister_style( 'wp-mediaelement' );
-
+	add_editor_style( 'https://use.typekit.net/dce7mhi.css' );
 	add_editor_style( '/build/index.css' );
 
 }

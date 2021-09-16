@@ -4,13 +4,14 @@
 	"description": "WordPress Theme build for my personal blog / website",
 	"main": "src/index.js",
 	"scripts": {
-		"build": "wp-scripts build",
+		"build": "wp-scripts build --webpack-no-externals",
 		"analyze": "wp-scripts build --webpack-bundle-analyzer",
-		"start": "wp-scripts start",
+		"start": "wp-scripts start --webpack-no-externals",
 		"env:start": "./bin/local-env/start.sh",
 		"env:stop": "./bin/local-env/stop.sh",
 		"env:reset-site": "./bin/local-env/install-wordpress.sh --reset-site",
-		"test": "cypress run"
+		"test": "cypress run",
+		"test:open": "cypress open"
 	},
 	"repository": {
 		"type": "git",
@@ -27,18 +28,21 @@
 	},
 	"homepage": "https://github.com/fabiankaegy/finn#readme",
 	"dependencies": {
-		"highlight.js": "^11.0.1",
+		"@wordpress/dom-ready": "^3.2.1",
+		"@wordpress/element": "^4.0.1",
+		"highlight.js": "^11.2.0",
 		"normalize.css": "^8.0.1"
 	},
 	"devDependencies": {
-		"@wordpress/eslint-plugin": "^9.0.6",
-		"@wordpress/scripts": "^16.1.4",
-		"cssnano": "^5.0.6",
-		"cypress": "^8.0.0",
+		"@wordpress/dependency-extraction-webpack-plugin": "^3.2.1",
+		"@wordpress/eslint-plugin": "^9.1.2",
+		"@wordpress/scripts": "^18.0.1",
+		"cssnano": "^5.0.8",
+		"cypress": "^8.3.1",
 		"postcss-css-variables": "^0.18.0",
 		"postcss-import": "^14.0.2",
 		"postcss-mixins": "^8.1.0",
-		"postcss-nested": "^5.0.5",
+		"postcss-nested": "^5.0.6",
 		"postcss-object-fit-images": "^1.1.2",
 		"postcss-preset-env": "^6.7.0"
 	}

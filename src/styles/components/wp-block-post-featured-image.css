@@ -1,0 +1,4 @@
+.wp-block-post-featured-image .wp-post-image {
+    max-height: 50vh;
+    object-fit: cover;
+}

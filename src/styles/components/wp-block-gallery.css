@@ -1,0 +1,35 @@
+.wp-block-gallery {
+	list-style: none;
+	padding: 0;
+	position: relative;
+	&.lightbox-enabled {
+		& li {
+			&::before {
+				font-family: "dashicons";
+				content: "\f211";
+				color: var(--wp--preset--color--eggshell);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				z-index: 10;
+				display: block;
+				font-size: 3rem;
+				opacity: 0;
+				transition: 0.2s ease-in-out;
+			}
+			&:hover {
+				cursor: pointer;
+				&::before {
+					opacity: 0.8;
+				}
+				& img {
+					filter: brightness(80%);
+				}
+			}
+			& img {
+				position: relative;
+			}
+		}
+	}
+}

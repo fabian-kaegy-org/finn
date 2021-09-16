@@ -1,0 +1,9 @@
+a {
+    &:hover,
+    &:active {
+        color: var(--wp--preset--color--primary);
+    }
+
+    word-wrap: break-word;
+	overflow-wrap: anywhere;
+}

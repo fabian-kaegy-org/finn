@@ -1,20 +1,18 @@
 /**
  * WordPress dependencies
  */
-import domReady from '@wordpress/dom-ready';
 import { render } from '@wordpress/element';
 /**
  * Internal dependencies
  */
 import { Gallery } from '../components/Gallery';
 
-domReady( () => {
-	const galleries = document.querySelectorAll( '.wp-block-gallery' );
+export function setupGalleryLightboxes( elements ) {
 	const lightboxRoot = document.createElement( 'div' );
-	const page = document.getElementById( 'page' );
+	const page = document.querySelector( '.site-content' );
 	page.appendChild( lightboxRoot );
 
-	galleries.forEach( ( gallery ) => {
+	elements.forEach( ( gallery ) => {
 		const figureElements = gallery.querySelectorAll( 'figure' );
 
 		const images = [ ...figureElements ].reduce(
@@ -41,4 +39,4 @@ domReady( () => {
 
 		gallery.classList.add( 'lightbox-enabled' );
 	} );
-} );
+}

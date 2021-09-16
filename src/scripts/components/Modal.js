@@ -3,7 +3,7 @@
  */
 import { useEffect, createPortal } from '@wordpress/element';
 
-const modalRoot = document.getElementById( 'page' );
+const modalRoot = document.querySelector( '.site-content' );
 
 export const Modal = ( props ) => {
 	const { children } = props;

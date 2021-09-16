@@ -1,0 +1,6 @@
+a[rel="tag"] {
+    background-color: var(--wp--preset--color--light-primary);
+    border-radius: var(--wp--custom--border-radius);
+    padding: 5px 10px;
+    text-decoration: none;
+}
