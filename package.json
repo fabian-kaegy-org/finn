@@ -4,9 +4,9 @@
 	"description": "WordPress Theme build for my personal blog / website",
 	"main": "src/index.js",
 	"scripts": {
-		"build": "wp-scripts build",
+		"build": "wp-scripts build --webpack-no-externals",
 		"analyze": "wp-scripts build --webpack-bundle-analyzer",
-		"start": "wp-scripts start",
+		"start": "wp-scripts start --webpack-no-externals",
 		"env:start": "./bin/local-env/start.sh",
 		"env:stop": "./bin/local-env/stop.sh",
 		"env:reset-site": "./bin/local-env/install-wordpress.sh --reset-site",
