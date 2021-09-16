@@ -7,6 +7,6 @@ context( 'Loads WordPress', () => {
 
 	it( 'renders the site', () => {
 		// check wether accordions can get expanded
-		cy.get( 'h1.site-title' ).should( 'be.visible' );
+		cy.get( '.wp-block-site-title' ).should( 'be.visible' );
 	} );
 } );
