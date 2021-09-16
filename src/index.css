@@ -33,6 +33,8 @@
 @import url('./styles/elements/image.css');
 @import url('./styles/elements/code.css');
 @import url('./styles/elements/tag.css');
+@import url('./styles/elements/heading.css');
+@import url('./styles/elements/inputs.css');
 
 /*--------------------------------------------------------------
 # Objects - Undecorated design patterns.
@@ -58,6 +60,7 @@
 @import url('./styles/components/lightbox.css');
 @import url('./styles/components/modal-container.css');
 @import url('./styles/components/comment-list.css');
+@import url('./styles/components/wp-block-post-comments.css');
 
 /*--------------------------------------------------------------
 # Utilities - Helpers and overrides.

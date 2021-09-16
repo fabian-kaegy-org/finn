@@ -108,7 +108,7 @@ wp theme activate finn --quiet
 
 # Install & activate Gutenberg plugin.
 echo -e $(status_message "Installing and activating Gutenberg plugin...")
-wp plugin install gutenberg --activate --force --quiet --version=11.0.0
+wp plugin install gutenberg --activate --force --quiet --version=11.4.1
 
 # Set pretty permalinks.
 echo -e $(status_message "Setting permalink structure...")

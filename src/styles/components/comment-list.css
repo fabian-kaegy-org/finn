@@ -51,3 +51,10 @@ li.comment {
 	color: var(--light-primary-color);
 	padding: 10px;
 }
+
+.comment-reply-link {
+	& .dashicons {
+		margin-right: 0.5rem;
+		transform: translateY(20%);
+	}
+}

@@ -2,7 +2,7 @@
     margin-top: 0 !important;
 
     & > *:first-child {
-        margin-top: calc(var(--wp--style--block-gap) * 2);
+        margin-top: calc(var(--wp--style--block-gap) * 4);
 
         &.alignfull {
             margin-top: 0;
@@ -10,7 +10,7 @@
     }
 
     & > *:last-child {
-        margin-bottom: calc(var(--wp--style--block-gap) * 2);
+        margin-bottom: calc(var(--wp--style--block-gap) * 4);
 
         &.alignfull {
             margin-bottom: 0;
