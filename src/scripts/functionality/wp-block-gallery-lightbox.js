@@ -1,10 +1,4 @@
-/**
- * WordPress dependencies
- */
 import { render } from '@wordpress/element';
-/**
- * Internal dependencies
- */
 import { Gallery } from '../components/Gallery';
 
 export function setupGalleryLightboxes( elements ) {
