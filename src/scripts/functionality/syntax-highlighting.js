@@ -9,6 +9,7 @@ import hljs from 'highlight.js/lib/core';
 
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
+import xml from 'highlight.js/lib/languages/xml';
 import scss from 'highlight.js/lib/languages/scss';
 import php from 'highlight.js/lib/languages/php';
 import bash from 'highlight.js/lib/languages/bash';
@@ -16,6 +17,7 @@ import json from 'highlight.js/lib/languages/json';
 
 const languages = [
 	{ name: 'php', language: php, formated: 'PHP' },
+	{ name: 'xml', language: xml, formated: 'HTML' },
 	{ name: 'javascript', language: javascript, formated: 'JavaScript' },
 	{ name: 'json', language: json, formated: 'JSON' },
 	{ name: 'bash', language: bash, formated: 'bash' },
