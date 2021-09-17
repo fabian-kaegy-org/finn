@@ -8,7 +8,6 @@ h6,
 li {
 	& code {
 		display: inline-block;
-		word-break: keep-all;
 		background-color: var(--wp--preset--color--light-primary);
 		padding: 0em 0.25em;
 		border-radius: 6px;
@@ -17,7 +16,7 @@ li {
 		overflow-wrap: anywhere;
 
 		@supports not (overflow-wrap: anywhere) {
-			overflow-wrap: break-word;
+			word-break: break-all;
 		}
 	}
 }
