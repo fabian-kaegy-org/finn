@@ -9,7 +9,6 @@ import hljs from 'highlight.js/lib/core';
 
 import javascript from 'highlight.js/lib/languages/javascript';
 import css from 'highlight.js/lib/languages/css';
-import xml from 'highlight.js/lib/languages/xml';
 import scss from 'highlight.js/lib/languages/scss';
 import php from 'highlight.js/lib/languages/php';
 import bash from 'highlight.js/lib/languages/bash';
@@ -17,7 +16,6 @@ import json from 'highlight.js/lib/languages/json';
 
 const languages = [
 	{ name: 'php', language: php, formated: 'PHP' },
-	{ name: 'xml', language: xml, formated: 'HTML' },
 	{ name: 'javascript', language: javascript, formated: 'JavaScript' },
 	{ name: 'json', language: json, formated: 'JSON' },
 	{ name: 'bash', language: bash, formated: 'bash' },
@@ -44,12 +42,20 @@ export function setupSyntaxHighlighting( elements ) {
 				codeBlock.classList.add( language.name );
 			}
 
+			if ( parent.classList.contains( 'html' ) ) {
+				codeBlock.classList.add( 'html' );
+			}
+
 			/**
 			 * check the code element for a class that responds to one of the
 			 * supported Languages to add the Formated Name as an rel attribute.
 			 */
 			if ( codeBlock.classList.contains( language.name ) ) {
 				codeBlock.setAttribute( 'rel', language.formated );
+			}
+
+			if ( codeBlock.classList.contains( 'html' ) ) {
+				codeBlock.setAttribute( 'rel', 'HTML' );
 			}
 		} );
 
