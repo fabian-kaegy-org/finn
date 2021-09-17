@@ -63,6 +63,7 @@
 @import url('./styles/components/wp-block-post-comments.css');
 @import url('./styles/components/wp-block-query-pagination.css');
 @import url('./styles/components/entry-header.css');
+@import url('./styles/components/wp-block-navigation-item.css');
 
 /*--------------------------------------------------------------
 # Utilities - Helpers and overrides.

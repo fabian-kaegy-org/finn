@@ -1,0 +1,8 @@
+.wp-block-navigation-item {
+	
+	&.current-menu-item a {
+		text-decoration: underline !important;
+		text-underline-offset: 5px;
+	}
+
+}
