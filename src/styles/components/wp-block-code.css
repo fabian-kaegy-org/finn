@@ -1,3 +1,8 @@
+.wp-block-code {
+	margin-top: calc(var(--wp--style--block-gap) * 2) !important;
+	margin-bottom: calc(var(--wp--style--block-gap) * 2) !important;
+}
+
 .wp-block-code.hljs {
 	border: none;
 	padding: 0;
@@ -5,7 +10,6 @@
 	position: relative;
 	border-radius: 8px;
 	overflow: hidden;
-	margin: var(--wp--style--block-gap) auto;
 	
 	& code {
 		height: 100%;
