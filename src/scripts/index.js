@@ -19,4 +19,15 @@ domReady( () => {
 			setupGalleryLightboxes( galleries );
 		} );
 	}
+
+	const postBlocks = document.querySelectorAll( '.wp-block-post' );
+	if ( postBlocks.length ) {
+		import(
+			/* webpackChunkName: "make-entire-post-clickable" */ './functionality/make-entire-post-clickable'
+		).then( ( { setupMakePostClickable } ) => {
+			postBlocks.forEach( ( postBlock ) => {
+				setupMakePostClickable( postBlock );
+			} );
+		} );
+	}
 } );
