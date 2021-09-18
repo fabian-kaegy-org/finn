@@ -1,4 +1,5 @@
 import domReady from '@wordpress/dom-ready';
+import './functionality/font-loading';
 import './functionality/ancor-links';
 
 domReady( () => {

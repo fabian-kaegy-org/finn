@@ -18,14 +18,6 @@ add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\register_assets' );
  * register theme assets
  */
 function register_assets() {
-
-	wp_enqueue_style(
-		'typekit-font',
-		'https://use.typekit.net/dce7mhi.css',
-		[],
-		'1.0.0'
-	);
-
 	wp_enqueue_script(
 		__NAMESPACE__ . '\main-script',
 		get_stylesheet_directory_uri() . '/build/index.js',
