@@ -64,6 +64,7 @@
 @import url('./styles/components/wp-block-query-pagination.css');
 @import url('./styles/components/entry-header.css');
 @import url('./styles/components/wp-block-navigation-item.css');
+@import url('./styles/components/page-numbers.css');
 
 /*--------------------------------------------------------------
 # Utilities - Helpers and overrides.
