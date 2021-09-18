@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 add_action( 'init', __NAMESPACE__ . '\register_assets' );
 add_action( 'enqueue_block_editor_assets', __NAMESPACE__ . '\register_assets' );
+add_filter( 'jetpack_sharing_counts', '__return_false', 99 );
+add_filter( 'jetpack_implode_frontend_css', '__return_false', 99 );
 
 /**
  * register theme assets
