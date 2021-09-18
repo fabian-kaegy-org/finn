@@ -1,9 +1,13 @@
 .wp-block-post-comments .comment-author,
 .wp-block-post-comments .comment-meta {
-    margin-left: 0;
+    margin-left: 0 !important;
 }
 
 .wp-block-post-comments .comment-author .avatar {
     height: 100px;
     width: 100px;
+}
+
+.wp-block-post-comments p {
+    width: 100%;
 }
