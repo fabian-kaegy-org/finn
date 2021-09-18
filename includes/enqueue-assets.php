@@ -39,19 +39,3 @@ function register_assets() {
 	add_editor_style( '/build/index.css' );
 
 }
-
-add_action( 'wp_footer', __NAMESPACE__ . '\register_wp_footer' );
-
-/**
- * register theme assets in footer
- */
-function register_wp_footer() {
-	global $wp_version;
-
-	wp_enqueue_style(
-		'dashicons',
-		'/wp-includes/css/dashicons.min.css',
-		[],
-		$wp_version
-	);
-}
