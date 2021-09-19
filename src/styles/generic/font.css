@@ -26,7 +26,7 @@
 html:not(.wf-active) {
     
     & p {
-        letter-spacing: 1.0px;
+        letter-spacing: 0.4px;
         word-spacing: -1.8px;
     }
 
@@ -36,7 +36,7 @@ html:not(.wf-active) {
     & h4,
     & h5,
     & h6 {
-        letter-spacing: -0.9px;
+        letter-spacing: -0.4px;
         word-spacing: 3.6px;
     }
 }
