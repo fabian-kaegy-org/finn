@@ -2,3 +2,41 @@
     font-display: swap;
     font-display: optional;
 }
+
+/* adjust fallback font overrides */
+@font-face {
+    font-family: fallback-font-sans;
+    ascent-override: 100%;
+    descent-override: 20%;
+    line-gap-override: normal;
+    advance-override: 10;
+    src: local(Arial);
+}
+
+/* adjust fallback font overrides */
+@font-face {
+    font-family: fallback-font-serif;
+    ascent-override: 100%;
+    descent-override: 20%;
+    line-gap-override: normal;
+    advance-override: 10;
+    src: local(serif);
+}
+
+html:not(.wf-active) {
+    
+    & p {
+        letter-spacing: 1.0px;
+        word-spacing: -1.8px;
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        letter-spacing: -0.9px;
+        word-spacing: 3.6px;
+    }
+}

@@ -46,12 +46,12 @@
 		"typography": {
 			"fontFamilies": [
 				{
-					"fontFamily": "\"source-serif-pro\", serif",
+					"fontFamily": "\"source-serif-pro\", \"fallback-font-serif\"",
 					"slug": "serif",
 					"name": "Serif"
 				},
 				{
-					"fontFamily": "\"source-sans-pro\", serif",
+					"fontFamily": "\"source-sans-pro\", \"fallback-font-sans\"",
 					"slug": "sans",
 					"name": "Sans"
 				},
