@@ -4,8 +4,8 @@
 }
 
 .wp-block-post-comments .comment-author .avatar {
-    height: 100px;
-    width: 100px;
+    height: 100px !important;
+    width: 100px !important;
 }
 
 .wp-block-post-comments p {
