@@ -39,3 +39,14 @@ function register_assets() {
 	add_editor_style( '/build/index.css' );
 
 }
+
+/**
+ * preconnect to typekit
+ */
+function add_typekit_preconnect() {
+	?>
+	<link rel="preconnect" href="https://use.typekit.net" crossorigin />
+	<link rel="preload" href="https://use.typekit.net/dce7mhi.css" as="style">
+	<?php
+}
+add_action( 'wp_head', __NAMESPACE__ . '\add_typekit_preconnect' );
