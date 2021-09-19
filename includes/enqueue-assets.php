@@ -29,6 +29,13 @@ function register_assets() {
 	);
 
 	wp_enqueue_style(
+		__NAMESPACE__ . '\typekit-fonts',
+		'https://use.typekit.net/dce7mhi.css',
+		[],
+		'1.0.0'
+	);
+
+	wp_enqueue_style(
 		__NAMESPACE__ . '\styles',
 		get_stylesheet_directory_uri() . '/build/index.css',
 		[],

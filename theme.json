@@ -46,17 +46,17 @@
 		"typography": {
 			"fontFamilies": [
 				{
-					"fontFamily": "\"source-serif-pro\", \"fallback-font-serif\"",
+					"fontFamily": "\"source-serif-pro\", serif",
 					"slug": "serif",
 					"name": "Serif"
 				},
 				{
-					"fontFamily": "\"source-sans-pro\", \"fallback-font-sans\"",
+					"fontFamily": "\"source-sans-pro\", sans-serif",
 					"slug": "sans",
 					"name": "Sans"
 				},
 				{
-					"fontFamily": "\"source-code-pro\", serif",
+					"fontFamily": "\"source-code-pro\", monospace",
 					"slug": "code",
 					"name": "Code"
 				}
