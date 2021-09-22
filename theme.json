@@ -175,6 +175,19 @@
 						"bottom": "1rem !important"
 					}
 				}
+			},
+			"core/quote": {
+				"color": {
+					"background": "var(--wp--preset--color--light-primary)"
+				},
+				"spacing": {
+					"padding": {
+						"top": "var(--wp--style--block-gap)",
+						"bottom": "var(--wp--style--block-gap)",
+						"left": "calc(var(--wp--style--block-gap)* 0.25)",
+						"right": "calc(var(--wp--style--block-gap)* 0.25)"
+					}
+				}
 			}
 		},
 		"elements": {
