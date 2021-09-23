@@ -182,10 +182,10 @@
 				},
 				"spacing": {
 					"padding": {
-						"top": "var(--wp--style--block-gap)",
-						"bottom": "var(--wp--style--block-gap)",
-						"left": "calc(var(--wp--style--block-gap)* 0.25)",
-						"right": "calc(var(--wp--style--block-gap)* 0.25)"
+						"top": "calc(var(--wp--style--block-gap)* 0.25)",
+						"bottom": "calc(var(--wp--style--block-gap)* 0.25)",
+						"left": "var(--wp--style--block-gap)",
+						"right": "var(--wp--style--block-gap)"
 					}
 				}
 			}
