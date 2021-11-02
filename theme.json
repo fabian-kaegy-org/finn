@@ -64,7 +64,7 @@
 			"fontSizes": [
 				{
 					"slug": "normal",
-					"size": 18,
+					"size": "18",
 					"name": "Normal"
 				}
 			],
@@ -73,6 +73,11 @@
 		"layout": {
 			"contentSize": "min(90%, 700px)",
 			"wideSize": "min(95%, 850px)"
+		},
+		"spacing": {
+			"blockGap": true,
+			"customMargin": true,
+			"customPadding": true
 		},
 		"custom": {
 			"border-radius": "6px"
@@ -83,9 +88,7 @@
 			"text": "var(--wp--preset--color--dusk)"
 		},
 		"spacing": {
-			"blockGap": "1.5rem",
-			"customMargin": true,
-			"customPadding": true
+			"blockGap": "1.5rem"
 		},
 		"typography": {
 			"fontSize": "18px",
