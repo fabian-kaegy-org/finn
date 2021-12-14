@@ -12,6 +12,7 @@
 	overflow: hidden;
 	
 	& code {
+		color: var(--wp--preset--color--white);
 		height: 100%;
 		width: 100%;
 		padding: var(--wp--style--block-gap);
