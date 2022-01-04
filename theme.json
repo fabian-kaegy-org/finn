@@ -1,6 +1,8 @@
 {
-	"version": 1,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
 	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"background": true,
 			"custom": false,
@@ -68,7 +70,7 @@
 					"name": "Normal"
 				}
 			],
-			"customTextDecorations": true
+			"textDecoration": true
 		},
 		"layout": {
 			"contentSize": "min(90%, 700px)",
@@ -76,8 +78,8 @@
 		},
 		"spacing": {
 			"blockGap": true,
-			"customMargin": true,
-			"customPadding": true
+			"margin": true,
+			"padding": true
 		},
 		"custom": {
 			"border-radius": "6px"
